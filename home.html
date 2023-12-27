@@ -4,76 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="asset/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/tablet.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
     <title>AskExperts</title>
 </head>
 
 <body>
     <header>
         <!-- header top start -->
-        <section class="aep-header-toparea-all">
-            <div class="aep-header-top-area flex justify-around items-center ">
-                <div class="aep-headertop-time-area flex items-center justify-center">
-                    <i class="fa-regular fa-clock"></i>
-                    <p class="ms-1">Monday - Friday8AM - 9PM</p>
-                </div>
-                <div class="aep-headertop-location-area flex items-center justify-center">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="ps-1">725 Park Ave, New York</p>
-                </div>
-                <div class="aep-headertop-social-area flex items-center justify-center gap-6">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <section class="aep-header-toparea-all bg-black">
+            <div class="container py-4">
+                <div class="aep-header-top-area flex justify-between items-center ">
+                    <div class="aep-headertop-time-area flex items-center justify-center gap-1">
+                        <i class="text-yellow-400 fa-regular fa-clock"></i>
+                        <p class="text-white">Monday - Friday8AM - 9PM</p>
+                    </div>
+                    <div class="aep-headertop-location-area flex items-center justify-center gap-1">
+                        <i class="text-yellow-400 fa-solid fa-location-dot"></i>
+                        <p class="text-white">725 Park Ave, New York</p>
+                    </div>
+                    <div class="aep-headertop-social-area flex items-center justify-center gap-6 text-white">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- header top end -->
         <!-- header area start -->
-        <section class="header-area-all bg-gray-500">
-            <div class="header-area">
-                <!-- heading logo area start -->
-                <div class="header-logo">
-                    <img src="asset/img/Logo.png" alt="">
-                </div>
-                <!-- heading logo area end -->
-                <!-- header  menu area start -->
-                <div class="header-menu-area">
-                    <ul id="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a>
-                            <ul>
-                                <li><a href="#">DropdownMenu</a></li>
-                                <li><a href="#">DropdownMenu</a></li>
-                                <li><a href="#">DropdownMenu</a>
-                                    <ul>
-                                        <li><a href="#">menu-3</a></li>
-                                        <li><a href="#">menu-3</a></li>
-                                        <li><a href="#">menu-3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">DropdownMenu</a></li>
-                            </ul>
-                        
-                        
-                        </li>
-                        <li><a href="#">Case</a></li>
-                        <li><a href="#">Faq</a></li>
-                    </ul>
-                </div>
+        <section class="header-area-all" style="background-color: rgba(27, 27, 27, 0.91);">
+            <div class="container py-10">
+                <div class="header-area flex justify-between items-center">
+                    <!-- heading logo area start -->
+                    <div class="header-logo">
+                        <img src="asset/img/Logo.png" alt="">
+                    </div>
+                    <!-- heading logo area end -->
+                    <!-- header  menu area start -->
+                    <div class="header-menu-area">
+                        <nav id="main_menu">
+                            <div class="header_menu">
+                                <ul id="nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a>
+                                        <ul>
+                                            <li><a href="#">DropdownMenu</a></li>
+                                            <li><a href="#">DropdownMenu</a></li>
+                                            <li><a href="#">DropdownMenu</a>
+                                                <ul>
+                                                    <li><a href="#">menu-3</a></li>
+                                                    <li><a href="#">menu-3</a></li>
+                                                    <li><a href="#">menu-3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">DropdownMenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Case</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                </ul>
 
-                <!-- header  menu area end -->
+                            </div>
+                        </nav>
+
+                    </div>
+                    <!-- header  menu area end -->
+                    <!-- header  right area start-->
+                    <div class="header_phone_call flex bg-white rounded-3xl items-center p-4 justify-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:">+ (888) 452 1505</a>
+                    </div>
+                    <!-- header  right area end-->
+                </div>
             </div>
         </section>
 
         <!-- header area end -->
     </header>
-    <main></main>
+    <main>
+        <!-- aep hero section start -->
+        <section class="aep-home-hero-area"
+            style="background: url('/asset/img/home-hero.png');background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="aep-home-hero-content">
+                <h1>Your small business growth advisors</h1>
+                <p class="mb-4">Get help from Alex Moore, a professional business coach with advanced experience on
+                    growth and business scaling. </p>
+                <div class="aep-home-hero-button flex gap-2">
+                    <div class="button-left">
+                        <a href="#" class="aep-btn">Read More</a>
+                    </div>
+                    <div class="button-right aep-btn-2 flex">
+                        <i class="fa-solid fa-book-medical"></i>
+                        <a href="#">Book A Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- aep hero section end -->
+        <!-- brand logo area start -->
+        <section class="aep-brand-logo-area  mt-2">
+            <div class="aep-brand-logo flex justify-around">
+                <img src="asset/img/brand/1.png" alt="">
+                <img src="asset/img/brand/2.png" alt="">
+                <img src="asset/img/brand/3.png" alt="">
+                <img src="asset/img/brand/4.png" alt="">
+                <img src="asset/img/brand/5.png" alt="">
+                <img src="asset/img/brand/6.png" alt="">
+
+            </div>
+        </section>
+        <!-- brand logo area end -->
+        <!-- home about us area start -->
+        <section class="aep-about-us-home-area-all">
+            <div class="container">
+                <div class="grid grid-cols-2">
+                    <div class="aep-about-us-left-area">
+                        <span>About Us</span>
+                        <h2 class="mt-5">About our Consuting <br>Agency Team</h2>
+                        <h4 class="my-4">We create experiences and build products that<br> make business grow</h4>
+                        <p>Get help from Alex Moore, a professional business coach<br> with advanced experience on growth and business scaling.</p>
+                        <div class="aep-two-number-ara flex items-center gap-x-10">
+                            <!-- single number start -->
+                            <div class="aep-single-number-area ">
+                                <div class="aep-single-number-icon flex items-center gap-2">
+                                    <i class="text-yellow-300 fa-solid fa-star"></i>
+                                    <h5>400+</h5>
+                                </div>
+                                <a href="#">
+                                    <p>Business Services</p>
+                                </a>
+                            </div>
+                            <!-- single number end -->
+                            <!-- single number start -->
+                            <div class="aep-single-number-area">
+                                <div class="aep-single-number-icon flex items-center gap-2">
+                                    <i class="text-green-400 fa-solid fa-face-smile"></i>
+                                    <h5>100+</h5>
+                                </div>
+                                <a href="#">
+                                    <p>Happy Customer</p>
+                                </a>
+
+                            </div>
+                            <!-- single number end -->
+
+                        </div>
+                    </div>
+                    <div class="aep-about-us-right-area relative" style="background-image: url(/asset/img/Pattern.png);
+                    background-position: left bottom;background-repeat: no-repeat;">
+                        <div class="aep-about-us-content flex items-center gap-3">
+                            <div class="lef-value relative"><h5>50+</h5></div>
+                            <div class="left-content"><p>Market Experiences</p></div>
+                        </div>
+                        <div class="aep-about-thumb float-right ">
+                            <img src="asset/img/about-thumb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home about us area end -->
+    </main>
     <footer></footer>
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <script src="asset/js/circle-progress.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/custom.js"></script>
 </body>
+
 
 </html>
