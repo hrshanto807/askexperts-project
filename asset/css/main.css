@@ -675,6 +675,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -777,6 +781,18 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-36 {
+  gap: 9rem;
+}
+
+.gap-40 {
+  gap: 10rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-10 {
@@ -977,6 +993,10 @@ video {
     align-items: center;
   }
 
+  .tab\:justify-start {
+    justify-content: flex-start;
+  }
+
   .tab\:justify-center {
     justify-content: center;
   }
@@ -1045,6 +1065,10 @@ video {
 
   .mob\:items-center {
     align-items: center;
+  }
+
+  .mob\:justify-start {
+    justify-content: flex-start;
   }
 
   .mob\:justify-center {

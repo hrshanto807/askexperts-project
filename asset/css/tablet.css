@@ -179,8 +179,37 @@
     } */
     .contact-form textarea {
         max-width: 100%;
-    
-    
+
+
+    }
+
+    .aep-about-hero-content {
+
+        width: 100%;
+
+    }
+
+    .aep-about-us-right-area img {
+        display: none;
+    }
+
+    .aep-about-us-home-area-all {
+        padding: 50px;
+    }
+
+    .video-area {
+        max-width: 100%;
+    }
+
+    .single-team-member-area {
+        margin-bottom: 40px;
+        text-align: start;
+        padding: 30px;
+    }
+
+    .single-price-list {    
+        width: 100%;
+       
     }
 
 
