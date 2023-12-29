@@ -1,5 +1,67 @@
 @media only screen and (max-width: 640px) {
-    .container{
+    .container {
         max-width: 100%;
     }
+
+    :root {
+        --aep-primary-font: "Cabin";
+        --aep-secondary-font: "Lato";
+        --aep-primary-color: #FFCC4A;
+        --aep-secondary-color: #4EAF4E;
+        --aep-heading-color: #181818;
+        --aep-text-color: #595566;
+        --aep-button-color: #181818;
+        --aep-bc-color: #F5F5F5;
+
+    }
+
+    .aep-home-hero-content {
+
+        width: 100%;
+
+    }
+
+    .aep-team-member-area-all {
+        margin-top: 2286px;
+    }
+
+    .aep-home-testimonials .owl-nav {
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        top: 617px;
+        gap: 0;
+    }
+
+    .aep-btn-2 {
+        width: 246px;
+    }
+
+    .aep-btn,
+    #submit {
+        width: 224px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

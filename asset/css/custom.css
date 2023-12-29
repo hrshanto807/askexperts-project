@@ -28,6 +28,7 @@
 
 .aep-btn,
 #submit {
+
     display: inline-block;
     padding: 16px 33px;
     align-items: center;
@@ -39,11 +40,8 @@
 }
 
 .aep-btn-2 {
-    display: flex;
-    justify-content: center;
-    padding: 16px 33px;
-    align-items: center;
-    gap: 10px;
+    padding: 16px 46px;
+    width: 245px;
     border-radius: 42px;
     background: var(--aep-primary-color);
     display: inline-block;
@@ -67,7 +65,7 @@ a {
 
 .aep-btn a {
     color: var(--aep-bc-color);
-    font-family: Lato;
+    font-family: var(--aep-secondary-font);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -175,6 +173,22 @@ span {
 
 /* ====================================================== */
 /* header menu all start */
+.header-menu-area {
+    position: relative;
+}
+
+.header-menu-area>a {
+    position: absolute;
+    right: 12px;
+    top: -25px;
+}
+
+.header-menu-area i {
+    color: var(--aep-bc-color);
+    font-size: 50px;
+    display: none;
+}
+
 #main_menu {
     width: 100%;
     clear: both;
@@ -335,9 +349,8 @@ span {
 
 .lef-value h5 {
     position: absolute;
-    position: absolute;
-    top: 27px;
-    right: 19px;
+    top: 36px;
+    right: 29px;
 }
 
 /* gellary area start */
@@ -358,18 +371,15 @@ span {
     right: 45px;
     top: 23px;
     color: var(--aep-heading-color);
-    font-family: var(--aep-primary-font);
-    font-size: 53px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 116%;
+    font-size: 30px;
     width: 54.121px;
     height: 54.121px;
     background-image: linear-gradient(154deg, #FFE9B1 -8.69%, #DDA003 120.59%);
     border-radius: 50%;
     display: none;
-    padding-left: 14px;
-    padding-bottom: 66px;
+    padding-top: 13px;
+    padding-left: 13px;
+
 
 }
 
@@ -720,7 +730,7 @@ span {
 
 .btn-footer {
     display: flex;
-    padding: 15px 23px;
+    padding: 16px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 42px;
@@ -734,6 +744,42 @@ span {
     margin-top: 20px;
     /* 28.8px */
 }
-.copyright-area a{
+
+.copyright-area a {
     color: var(--aep-bc-color);
+}
+
+.aep-home-blog-heading {
+    padding-right: 490px;
+}
+
+.aep-home-gellary-heading {
+    padding-right: 300px;
+}
+
+
+
+#main_menu ul li a i {
+    font-size: 16px;
+    color: var(--aep-bc-color);
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.all-footer-area a i {
+    color: var(--aep-heading-color);
+    font-size: 30px;
+    width: 54.121px;
+    height: 54.121px;
+    border-radius: 50%;
+    background-color: #DDA003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 133px;
+    bottom: 91px;
+
 }
