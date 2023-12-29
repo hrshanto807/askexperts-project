@@ -783,3 +783,61 @@ span {
     bottom: 91px;
 
 }
+
+/* ================================================================================= */
+/* About */
+/* ================================================================================= */
+.aep-about-hero-content {
+    display: flex;
+    width: 780px;
+    padding: 55px 58px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+}
+
+.aep-about-member-area-all {
+    margin-top: 80px;
+}
+
+.aep-about-us-right-area img {
+    position: absolute;
+    top: 45px;
+    left: 54px;
+}
+
+.single-vission-content a {
+    color: var(--aep-secondary-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--aep-secondary-color);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-us-aep-exprience {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--aep-bc-color);
+}
+
+.video-area {
+    width: 962px;
+    height: 369px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;   
+}
+.single-team-member-area img{
+    border-radius: 20px;
+}

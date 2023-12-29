@@ -556,6 +556,30 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.left-9 {
+  left: 2.25rem;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -564,8 +588,16 @@ video {
   grid-column: 1 / -1;
 }
 
+.float-end {
+  float: inline-end;
+}
+
 .float-right {
   float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 .my-4 {
@@ -576,6 +608,11 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .mb-10 {
@@ -630,12 +667,24 @@ video {
   margin-top: 2rem;
 }
 
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -726,6 +775,10 @@ video {
   gap: 2.25rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -785,6 +838,10 @@ video {
   padding: 1rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -805,6 +862,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pe-1 {
+  padding-inline-end: 0.25rem;
 }
 
 .text-center {

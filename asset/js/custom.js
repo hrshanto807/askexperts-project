@@ -88,5 +88,17 @@ $('.header-menu-area > a').click(function(){
             return false;
 
         })
+        // magnific poppup video
+
+        $(document).ready(function() {
+            $('.video-play').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,        
+                fixedContentPos: false
+            });
+        });
 
 })(jQuery);
