@@ -233,6 +233,11 @@
     padding: 87px;
     border-radius: 45px;
 }
+.portfollio-controlar {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 

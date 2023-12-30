@@ -127,7 +127,7 @@
     });
     // faqs
 
-    
+
     $('.single-accordian:nth-child(2)').children('.single-accordian-content').slideDown().prev('.single-accordian-tittle').addClass('active-accordian');
 
     $('.single-accordian-tittle').click(function () {
@@ -135,8 +135,10 @@
 
         $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian')
     });
-    
 
-    
+    // mixitop area
+
+    var mixer = mixitup('.aep-case-gellary-img');
+
 
 })(jQuery);

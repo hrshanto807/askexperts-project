@@ -1134,3 +1134,38 @@ display: none;
     line-height: 160%;
     width: 180px;
 }
+
+/* =============================================================================== */
+/* case study area */
+.all-mixitup-area{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.aep-single-gellary-img img {
+    border-radius: 42px;
+}
+
+.portfollio-controlar {
+    display: flex;
+    padding: 31px 44px;
+    gap: 39px;
+    border-radius: 30px;
+    background: #181818;
+    margin-bottom: 50px;
+}
+
+.portfollio-controlar a{
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%; /* 29px */
+    border-bottom: 1px solid transparent;
+}
+
+.portfollio-controlar a:hover{
+    color: var(--aep-primary-color);
+    border-bottom: 1px solid var(--aep-primary-color);
+    
+}
