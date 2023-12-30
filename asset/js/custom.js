@@ -126,13 +126,17 @@
         });
     });
     // faqs
-    $('.single-accordian:nth-child(2)').children('.single-accordian-content').slideDown().prev('.single-accordian-tittle').addClass('active-accordian').removeClass('minus');
+
+    
+    $('.single-accordian:nth-child(2)').children('.single-accordian-content').slideDown().prev('.single-accordian-tittle').addClass('active-accordian');
 
     $('.single-accordian-tittle').click(function () {
-        $(this).toggleClass('active-accordian').toggleClass('minus').next().slideToggle().parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-content').hide();
+        $(this).toggleClass('active-accordian').removeClass('minus').next().slideToggle().parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-content').hide();
 
-        $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian').addClass('minus');
-       
+        $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian').addClass('minus')
     });
+    $('.single-accordian').addClass('minus');
+
+    
 
 })(jQuery);

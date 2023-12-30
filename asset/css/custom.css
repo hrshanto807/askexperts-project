@@ -1010,16 +1010,18 @@ span {
 }
 
 /* faqs accordian */
-.aep-faqs-area-all .container {   
-    padding: 151px 236px;   
-    
+.aep-faqs-area-all .container {
+    padding: 151px 236px;
+
 }
+
 .single-accordian {
     background-color: #f5f7fa;
     padding: 20px 50px;
     margin-bottom: 10px;
 }
-.single-accordian .single-accordian-tittle {   
+
+.single-accordian .single-accordian-tittle {
     padding: 20px;
     border-radius: 8px 8px 0 0;
     display: flex;
@@ -1027,19 +1029,23 @@ span {
     align-items: center;
     cursor: pointer;
 }
+
 .single-accordian .single-accordian-tittle h2 {
     font-size: 20px;
     font-weight: 600;
     color: var(--aep-button-color);
 }
+
 .single-accordian .single-accordian-tittle i {
     font-size: 20px;
     color: var(--aep-button-color);
 }
+
 .single-accordian-content {
     padding: 15px;
     display: none;
 }
+
 .single-accordian-content p {
     color: var(--aep-button-color);
     font-size: 16px;
@@ -1047,9 +1053,42 @@ span {
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
 .active-accordian i.fa-plus {
     display: none;
 }
+
 .minus i.fa-minus {
     display: none;
+}
+
+/* talk area */
+.talk-form form {
+    display: flex;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.talk-form form input {
+    display: flex;
+    width: 304px;
+    padding: 22px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 54px;
+    border: 1px solid #C1C1C1;
+    background: #FFF;
+}
+
+.talk-form form input#submit {
+    background: #4EAF4E;
+    width: 200px;
+
+}
+
+.aep-talk-ready-area {
+    border-radius: 30px;
+    background: #181818;
+   background-repeat: no-repeat;
+   background-position: right;
 }
