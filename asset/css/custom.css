@@ -1009,7 +1009,10 @@ span {
     color: var(--aep-bc-color);
 }
 
-/* faqs accordian */
+/*-------------------------------------
+* faqs accordian 
+---------------------------------------*/
+
 .aep-faqs-area-all .container {
     padding: 151px 236px;
 
@@ -1029,6 +1032,10 @@ span {
     align-items: center;
     cursor: pointer;
 }
+
+/* .single-accordian-tittle .fa-solid.fa-minus{
+display: none;
+} */
 
 .single-accordian .single-accordian-tittle h2 {
     font-size: 20px;
@@ -1058,7 +1065,11 @@ span {
     display: none;
 }
 
-.minus i.fa-minus {
+.active-accordian.single-accordian-tittle i.fa-minus {
+    display: block;
+}
+
+.single-accordian-tittle i.fa-minus {
     display: none;
 }
 
@@ -1069,7 +1080,8 @@ span {
     margin-top: 20px;
 }
 
-.talk-form form input {
+.talk-form form input,
+.newsletter-form input {
     display: flex;
     width: 304px;
     padding: 22px 20px;
@@ -1089,6 +1101,36 @@ span {
 .aep-talk-ready-area {
     border-radius: 30px;
     background: #181818;
-   background-repeat: no-repeat;
-   background-position: right;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* ============================================================== */
+/* single taem area */
+.thumb-single-team img {
+    margin-top: 55px;
+    border-radius: 20px;
+}
+
+/* ------------------------------------------ */
+/* newSletter */
+/* ------------------------------------------ */
+.aep-newsletter-area {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: var(--aep-heading-color);
+    padding: 87px;
+    border-radius: 45px;
+}
+
+.newsletter-form input#submit {
+    display: inline-flex;
+    background: #FFCC4A;
+    color: #181818;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    width: 180px;
 }

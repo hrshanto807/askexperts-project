@@ -226,6 +226,14 @@
    display: none;
 }
 
+.aep-newsletter-area {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: var(--aep-heading-color);
+    padding: 87px;
+    border-radius: 45px;
+}
+
 
 
 
