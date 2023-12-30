@@ -211,7 +211,17 @@
         width: 100%;
        
     }
-
+    .single-servie-details-area p{
+        padding-right: 0;
+       }
+       .aep-expect-area img
+{
+ display: none;
+}
+.aep-faqs-area-all .container {   
+    padding: 20px;   
+    
+}
 
 
 

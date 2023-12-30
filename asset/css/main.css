@@ -548,6 +548,10 @@ video {
   width: 100%;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -556,48 +560,12 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.left-9 {
-  left: 2.25rem;
-}
-
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
 
-.col-span-full {
-  grid-column: 1 / -1;
-}
-
-.float-end {
-  float: inline-end;
-}
-
 .float-right {
   float: right;
-}
-
-.float-left {
-  float: left;
 }
 
 .my-4 {
@@ -617,6 +585,14 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-4 {
@@ -663,20 +639,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-11 {
-  margin-bottom: 2.75rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -697,10 +665,6 @@ video {
 
 .grow {
   flex-grow: 1;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -743,6 +707,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -771,6 +739,14 @@ video {
   gap: 1rem;
 }
 
+.gap-40 {
+  gap: 10rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -779,20 +755,16 @@ video {
   gap: 2.25rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-36 {
   gap: 9rem;
-}
-
-.gap-40 {
-  gap: 10rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-10 {
@@ -807,15 +779,6 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
 }
 
 .rounded-3xl {
@@ -854,10 +817,6 @@ video {
   padding: 1rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -880,8 +839,8 @@ video {
   padding-top: 1rem;
 }
 
-.pe-1 {
-  padding-inline-end: 0.25rem;
+.ps-40 {
+  padding-inline-start: 10rem;
 }
 
 .text-center {
@@ -941,26 +900,6 @@ video {
 }
 
 @media (max-width: 992px) {
-  .tab\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
-  .tab\:col-span-12 {
-    grid-column: span 12 / span 12;
-  }
-
-  .tab\:col-span-full {
-    grid-column: 1 / -1;
-  }
-
-  .tab\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .tab\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .tab\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -977,20 +916,12 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .tab\:flex-row {
-    flex-direction: row;
-  }
-
   .tab\:flex-col {
     flex-direction: column;
   }
 
   .tab\:items-start {
     align-items: flex-start;
-  }
-
-  .tab\:items-center {
-    align-items: center;
   }
 
   .tab\:justify-start {
@@ -1005,16 +936,16 @@ video {
     gap: 0.75rem;
   }
 
-  .tab\:ps-3 {
-    padding-inline-start: 0.75rem;
+  .tab\:ps-10 {
+    padding-inline-start: 2.5rem;
   }
 
   .tab\:ps-20 {
     padding-inline-start: 5rem;
   }
 
-  .tab\:ps-10 {
-    padding-inline-start: 2.5rem;
+  .tab\:ps-3 {
+    padding-inline-start: 0.75rem;
   }
 
   .tab\:text-center {
@@ -1023,18 +954,6 @@ video {
 }
 
 @media (max-width: 640px) {
-  .mob\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .mob\:col-span-12 {
-    grid-column: span 12 / span 12;
-  }
-
-  .mob\:mt-0 {
-    margin-top: 0px;
-  }
-
   .mob\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -1051,20 +970,12 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .mob\:flex-row {
-    flex-direction: row;
-  }
-
   .mob\:flex-col {
     flex-direction: column;
   }
 
   .mob\:items-start {
     align-items: flex-start;
-  }
-
-  .mob\:items-center {
-    align-items: center;
   }
 
   .mob\:justify-start {
@@ -1079,29 +990,20 @@ video {
     gap: 0.75rem;
   }
 
-  .mob\:gap-y-3 {
-    row-gap: 0.75rem;
-  }
-
-  .mob\:gap-x-3 {
-    -moz-column-gap: 0.75rem;
-         column-gap: 0.75rem;
-  }
-
   .mob\:ps-0 {
     padding-inline-start: 0px;
   }
 
-  .mob\:ps-3 {
-    padding-inline-start: 0.75rem;
+  .mob\:ps-10 {
+    padding-inline-start: 2.5rem;
   }
 
   .mob\:ps-20 {
     padding-inline-start: 5rem;
   }
 
-  .mob\:ps-10 {
-    padding-inline-start: 2.5rem;
+  .mob\:ps-3 {
+    padding-inline-start: 0.75rem;
   }
 
   .mob\:text-center {

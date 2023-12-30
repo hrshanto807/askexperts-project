@@ -564,7 +564,8 @@ span {
     gap: 7px;
 }
 
-.aep-home-testimonials .owl-nav p {
+.aep-home-testimonials .owl-nav p,
+.aep-service-finance-area .owl-nav p {
     color: #353535;
     font-family: var(--aep-secondary-font);
     font-size: 18px;
@@ -575,7 +576,8 @@ span {
 
 }
 
-.aep-home-testimonials .owl-nav button i {
+.aep-home-testimonials .owl-nav button i,
+.aep-service-finance-area .owl-nav button i {
     width: 48px;
     height: 48px;
     font-size: 20px;
@@ -588,7 +590,8 @@ span {
 
 }
 
-.aep-home-testimonials .owl-nav button i:hover {
+.aep-home-testimonials .owl-nav button i:hover,
+.aep-service-finance-area .owl-nav button i:hover {
     background-color: var(--aep-heading-color);
     color: var(--aep-bc-color);
 }
@@ -894,7 +897,7 @@ span {
     padding-left: 29px;
 }
 
-.single-price-list {    
+.single-price-list {
     width: 367px;
     padding: 21px 22px 40px 22px;
     align-items: flex-start;
@@ -914,21 +917,139 @@ span {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 251.5%;    
+    line-height: 251.5%;
 }
 
 .single-all-prices-list li a::before {
-    content:"\f054";
+    content: "\f054";
     color: var(--aep-bc-color);
     font-family: 'FontAwesome';
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
-    line-height: 251.5%; 
+    line-height: 251.5%;
     margin-right: 15px;
     background-color: #181818;
     padding: 8px;
     border-radius: 50%;
-    
 
+
+}
+
+/* =================================================================================== */
+/* service single details */
+.aep-service-hero-content {
+    display: inline-flex;
+    padding: 48px 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+}
+
+.single-aep-finance-area {
+    display: flex;
+    width: 377px;
+    padding: 45px 39px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #EBEBEB;
+}
+
+.aep-service-finance-area .owl-nav {
+    display: flex;
+    gap: 26px;
+    position: absolute;
+    top: -78px;
+    right: 42px;
+}
+
+.single-servie-details-area p {
+    padding-right: 525px;
+}
+
+.single-aep-finance-area i {
+    font-size: 38px;
+    color: black;
+}
+
+.single-aep-finance-area:hover {
+    background-color: #181818;
+}
+
+.single-aep-finance-area:hover i {
+    font-size: 38px;
+    color: var(--aep-primary-color);
+}
+
+.single-aep-finance-area:hover h4,
+.single-aep-finance-area:hover p {
+    color: var(--aep-bc-color);
+}
+
+.aep-expect-area img {
+    position: absolute;
+    top: 45px;
+    left: 81px;
+}
+
+.aep-service-single-video-area {
+    background: #181818;
+    padding-top: 152px;
+    padding-bottom: 152px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.aep-service-single-video-area {
+    color: var(--aep-bc-color);
+}
+
+/* faqs accordian */
+.aep-faqs-area-all .container {   
+    padding: 151px 236px;   
+    
+}
+.single-accordian {
+    background-color: #f5f7fa;
+    padding: 20px 50px;
+    margin-bottom: 10px;
+}
+.single-accordian .single-accordian-tittle {   
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.single-accordian .single-accordian-tittle h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--aep-button-color);
+}
+.single-accordian .single-accordian-tittle i {
+    font-size: 20px;
+    color: var(--aep-button-color);
+}
+.single-accordian-content {
+    padding: 15px;
+    display: none;
+}
+.single-accordian-content p {
+    color: var(--aep-button-color);
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.active-accordian i.fa-plus {
+    display: none;
+}
+.minus i.fa-minus {
+    display: none;
 }
