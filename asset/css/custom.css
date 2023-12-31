@@ -1135,7 +1135,7 @@ span {
 /* ------------------------------------------ */
 .aep-newsletter-area {
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
     background-color: var(--aep-heading-color);
     padding: 87px;
     border-radius: 45px;
@@ -1316,3 +1316,16 @@ span {
 .blog-details-author-details img{
     border-radius: 50%;
 }
+
+/* ================================================== */
+/* error-page-area-all */
+/* ================================================== */
+
+.error-page-area{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
