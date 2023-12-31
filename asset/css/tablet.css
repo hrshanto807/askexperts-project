@@ -207,37 +207,48 @@
         padding: 30px;
     }
 
-    .single-price-list {    
+    .single-price-list {
         width: 100%;
-       
+
     }
-    .single-servie-details-area p{
+
+    .single-servie-details-area p {
         padding-right: 0;
-       }
-       .aep-expect-area img
-{
- display: none;
-}
-.aep-faqs-area-all .container {   
-    padding: 20px;   
+    }
+
+    .aep-expect-area img {
+        display: none;
+    }
+
+    .aep-faqs-area-all .container {
+        padding: 20px;
+
+    }
+
+    .aep-talk-ready-area {
+        display: none;
+    }
+
+    .aep-newsletter-area {
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: var(--aep-heading-color);
+        padding: 87px;
+        border-radius: 45px;
+    }
+
+    .portfollio-controlar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .single-case-name-area {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 0;
+    }
+
     
-}
-.aep-talk-ready-area {
-   display: none;
-}
-
-.aep-newsletter-area {
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-color: var(--aep-heading-color);
-    padding: 87px;
-    border-radius: 45px;
-}
-.portfollio-controlar {
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 
