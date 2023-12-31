@@ -1,10 +1,9 @@
 (function ($) {
+
     $('#main_menu ul ul').parent('li').children('a').append('<i class="fa-solid fa-chevron-right"></i>')
 
     $('.header-menu-area > a').click(function () {
         $('#main_menu').slideToggle();
-
-
     })
 
     $('.lef-value').circleProgress({
@@ -137,13 +136,13 @@
     });
 
     // owl-carousel for service pages
-    $('.single-details-main-testimonial').owlCarousel({       
-        loop: true,       
+    $('.single-details-main-testimonial').owlCarousel({
+        loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
-        nav:false,
-        dots:false,
+        nav: false,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -159,10 +158,11 @@
             },
         },
     });
+    
 
     // mixitop area
 
     var mixer = mixitup('.aep-case-gellary-img');
-    
+
 
 })(jQuery);
