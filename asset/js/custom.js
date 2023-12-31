@@ -96,14 +96,14 @@
             autoplayHoverPause: true,
             navText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
 
-        }),
+        });
 
-        // lightbox gellary
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true,
+    // lightbox gellary
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
 
-        }),
+    }),
         // scroll top
         jQuery(window).scroll(function () {
 
@@ -136,9 +136,33 @@
         $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian')
     });
 
+    // owl-carousel for service pages
+    $('.single-details-main-testimonial').owlCarousel({       
+        loop: true,       
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav:false,
+        dots:false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            },
+        },
+    });
+
     // mixitop area
 
     var mixer = mixitup('.aep-case-gellary-img');
-
+    
 
 })(jQuery);

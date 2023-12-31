@@ -15,6 +15,12 @@
         --aep-bc-color: #F5F5F5;
 
     }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
 
     .aep-home-hero-area {
         padding: 20px;
@@ -248,7 +254,20 @@
         margin-top: 0;
     }
 
-    
+    .blog-details-author-details {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog-details-author-details img{
+        width: 125px;
+        gap: 20px;
+    }
+
+    .single-details-main-testimonial {
+        padding: 30px;
+
+    }
 
 
 
