@@ -1284,7 +1284,8 @@ span {
 /* --------------------------------------------------------- */
 /*blog-details bg*/
 /* --------------------------------------------------------- */
-.single-details-main-testimonial {
+.single-details-main-testimonial,
+.single-details-main-changelog {
     border-radius: 30px;
     background: #181818;
     padding: 94px 152px;
@@ -1310,10 +1311,11 @@ span {
     padding: 50px;
     gap: 35px;
     width: 794px;
-    margin-top: 50px;  
-   
+    margin-top: 50px;
+
 }
-.blog-details-author-details img{
+
+.blog-details-author-details img {
     border-radius: 50%;
 }
 
@@ -1321,7 +1323,7 @@ span {
 /* error-page-area-all */
 /* ================================================== */
 
-.error-page-area{
+.error-page-area {
     margin-top: 200px;
     display: flex;
     justify-content: center;
@@ -1329,3 +1331,19 @@ span {
     flex-direction: column;
 }
 
+/* ------------------------------------------- */
+/* licenses */
+/* ------------------------------------------- */
+.aep-license-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 81px;
+}
+.aep-license-content h3{
+    margin-top: 40px;
+}
+.aep-license-content p{
+   margin-top: 20px;
+}
