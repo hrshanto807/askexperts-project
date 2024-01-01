@@ -46,9 +46,9 @@
                         <nav id="main_menu">
                             <div class="header_menu">
                                 <ul id="nav">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Service</a>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Service</a>
                                         <ul>
                                             <li><a href="#">DropdownMenu</a></li>
                                             <li><a href="#">DropdownMenu</a></li>
@@ -62,8 +62,9 @@
                                             <li><a href="#">DropdownMenu</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Case</a></li>
-                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="case-studies.html">Case</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="team.html">Team</a></li>
                                 </ul>
                             </div>
                         </nav>

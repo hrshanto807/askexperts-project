@@ -30,13 +30,14 @@ add_action('wp_enqueue_scripts', 'aepexpert_all_scripts');
 // all Genarel php here
 
 function aepexpert_all_genarel(){
-
+ add_theme_support('post-thumbnails');
+ add_image_size('aep-blog-thumb',583,321);
 };
 add_action('after_setup_theme','aepexpert_all_genarel');
 
 
-
-function biziver_allow_tags()
+//  allow html tag
+function aepexpert_allow_tags()
 {
     $allow_tags = array(
         'br'  => array(),
@@ -44,9 +45,24 @@ function biziver_allow_tags()
     return $allow_tags;
 };
 
+// A Custom function for get an option
+if (!function_exists('aepexpert_get_option')) {
+    function aepexpert_get_option($option = '', $default = null)
+    {
+        $options = get_option('aepexpert_framwork'); // Attention: Set your unique id of the framework
+        return (isset($options[$option])) ? $options[$option] : $default;
+    }
+}
+
 // file include here
 require_once AEPEXPERT_FILE_INC . '/inc/codestar-framework/codestar-framework.php';
+require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/init.php';
 require_once AEPEXPERT_FILE_INC . '/inc/codestar-framework/theme-option.php';
+require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
+require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
+require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/example-functions.php';
+
+
 
 
 
