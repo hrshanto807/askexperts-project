@@ -1,9 +1,4 @@
 <?php
-
-/**
- * Template Name: Blog
- */
-
 get_header();
 ?>
 <!-- aep hero section start -->
@@ -11,8 +6,7 @@ get_header();
 ?>');background-position: center; background-repeat: no-repeat; background-size: cover;">
     <div class="container">
         <div class="aep-service-hero-content">
-            <span><?php if(!empty(aepexpert_get_option('blog-hero-name')))
-                {echo esc_html(aepexpert_get_option('blog-hero-name')) ;}?></span>
+            <span><?php echo get_the_title(get_queried_object_id());?></span>
             <h1><?php if(!empty(aepexpert_get_option('blog-hero-title')))
                 {echo esc_html(aepexpert_get_option('blog-hero-title')) ;};?></h1>
         </div>

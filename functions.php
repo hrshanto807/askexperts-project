@@ -32,7 +32,8 @@ add_action('wp_enqueue_scripts', 'aepexpert_all_scripts');
 function aepexpert_all_genarel()
 {
     add_theme_support('post-thumbnails');
-    add_image_size('aep-blog-thumb', 583, 321);
+    add_image_size('aep-blog-thumb', 583, 321,true);
+    add_image_size('aep-team-thumb', 366, 399,true);
 };
 add_action('after_setup_theme', 'aepexpert_all_genarel');
 
@@ -68,5 +69,6 @@ require_once AEPEXPERT_FILE_INC . '/inc/cmb2-aiconselect/iconselect.php';
 require_once AEPEXPERT_FILE_INC . '/inc/codestar-framework/theme-option.php';
 require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
 require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
-require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/example-functions.php';
+//require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/example-functions.php';
 require_once AEPEXPERT_FILE_INC . '/inc/shortcode.php';
+require_once AEPEXPERT_FILE_INC . '/inc/custom-post.php';

@@ -91,3 +91,55 @@ function aepexpart_blog_post_fileds()
     ));
 }
 add_action('cmb2_admin_init', 'aepexpart_blog_post_fileds');
+
+
+// Team page Meta List
+
+function aepexpart_team_post_fileds()
+{
+    $team_post = new_cmb2_box(array(
+        'id' => 'meta-team-social-list',
+        'title' => esc_html(__('Social List', 'aeptheme')),
+        'object_types'  => array('aeptheme-teams'),
+
+
+    ));
+   
+    // team Social Link
+    $team_post->add_field(array(
+        'id'          => 'team-social_repeat_group',
+        'type'        => 'group',
+        'description' => __('You Can Only 4 Social link Add Here', 'aeptheme'),
+        'repeatable'  => true,
+        'options'     => array(
+            'group_title'       => __('Social {#}', 'aeptheme'),
+            'add_button'        => __('Add Another Social', 'aeptheme'),
+            'remove_button'     => __('Remove Social', 'aeptheme'),
+            'sortable'          => true,
+        ),
+    ));
+    $team_post->add_group_field(
+        'team-social_repeat_group',
+        array(
+            'name' => 'Social Icon',
+            'id'   => 'team-social_icon',
+            'type' => 'faiconselect',
+            'options_cb' => 'returnRayFapsa',
+            'attributes' => array(
+                'faver' => 5
+            ),
+            'sortable' => true,
+            'limit'         => 4,
+
+        )
+    );
+    $team_post->add_group_field('team-social_repeat_group', array(
+        'name' => 'Social Link',
+        'id'   => 'team-social_link',
+        'type' => 'text',
+        'sortable' => true,
+        'limit'         => 4
+    ));
+   
+}
+add_action('cmb2_admin_init', 'aepexpart_team_post_fileds');

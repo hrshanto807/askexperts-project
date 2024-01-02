@@ -2,7 +2,8 @@
          <!-- aep hero section start -->
          <?php if(have_posts()):while (have_posts()):the_post();?>
          <section class="aep-home-hero-area"
-         style="background: url('<?php echo get_template_directory_uri();?>/asset/img/single-bloag-bg.png');background-position: center; background-repeat: no-repeat; background-size: cover;">
+         style="background: url('<?php $single_bg = aepexpert_get_option('single-hero-bg');
+         if(!empty($single_bg)){echo esc_url($single_bg['url']);};?>');background-position: center; background-repeat: no-repeat; background-size: cover;">
          <div class="container">
              <div class="aep-service-hero-content">
                  <span><?php the_date();?></span>
