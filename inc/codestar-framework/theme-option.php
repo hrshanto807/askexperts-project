@@ -25,7 +25,7 @@ CSF::createSection($prefix, array(
   'title' => 'All Hero BG Here',
   'icon'  => 'far fa-images',
 ));
-
+// blog hero
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
   'title' => 'Blog Page Hero BG',
@@ -48,6 +48,18 @@ CSF::createSection($prefix, array(
   )
 ));
 
+// single post hero
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'Single Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'single-hero-bg',
+      'title' => 'Single Hero Bg',
+      'type'  => 'media',
+    ),   
+  )
+));
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
   'title' => 'Home Page Hero BG',

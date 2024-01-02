@@ -58,7 +58,7 @@
                             href="#"> | Terms of Service</a> <a href="">| Privacy Policy</a></p>
                 </div>
                 <!-- copyright area end -->
-               
+                <a href="#" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></a>
             </div>
         </section>
         <!-- copyright area start -->

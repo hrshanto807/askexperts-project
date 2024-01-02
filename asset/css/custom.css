@@ -1266,19 +1266,25 @@ span {
     flex-direction: column;
     gap: 10px;
 }
+.li-area-blog ul li{
+   list-style: disc;
+}
 
 .li-area-blog li a {
     color: #595566;
 
 }
 
-.li-area-blog.two {
+.li-area-blog.two ul li{
     list-style: decimal;
 
 }
 
 .all-single-content-here h2 {
     margin-top: 40px;
+}
+.all-single-content-here img{
+    width: 100%;
 }
 
 /* --------------------------------------------------------- */
@@ -1346,4 +1352,8 @@ span {
 }
 .aep-license-content p{
    margin-top: 20px;
+}
+
+.aep-service-hero-content{
+    width: 838px;
 }

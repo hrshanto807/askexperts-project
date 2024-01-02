@@ -136,7 +136,7 @@
     });
 
     // owl-carousel for service pages
-    $('.single-details-main-testimonial').owlCarousel({
+    $('#single-testi').owlCarousel({
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
@@ -162,7 +162,7 @@
 
     // mixitop area
 
-    var mixer = mixitup('.aep-case-gellary-img');
+    // var mixer = mixitup('.aep-case-gellary-img');
 
 
 })(jQuery);

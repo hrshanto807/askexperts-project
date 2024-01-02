@@ -23,6 +23,53 @@ function aepexpart_blog_post_fileds()
         'type' => 'text',
     ));
     $blog_post->add_field(array(
+        'name' => esc_html__('Position Author', 'aeptheme'),
+        'desc' => esc_html__('Position your author', 'aeptheme'),
+        'id'   => 'position-author',
+        'type' => 'text',
+    ));
+    $blog_post->add_field(array(
+        'name' => esc_html__('Some Text About Your Author', 'aeptheme'),
+        'desc' => esc_html__('Write Your about Author', 'aeptheme'),
+        'id'   => 'content-author',
+        'type' => 'textarea',
+    ));
+    // Autor Social Link
+    $blog_post->add_field(array(
+        'id'          => 'social_repeat_group',
+        'type'        => 'group',
+        'description' => __('You Can Only 4 Social link Add Here', 'aeptheme'),
+        'repeatable'  => true,
+        'options'     => array(
+            'group_title'       => __('Social {#}', 'aeptheme'),
+            'add_button'        => __('Add Another Social', 'aeptheme'),
+            'remove_button'     => __('Remove Social', 'aeptheme'),
+            'sortable'          => true,
+        ),
+    ));
+    $blog_post->add_group_field(
+        'social_repeat_group',
+        array(
+            'name' => 'Social Icon',
+            'id'   => 'social_icon',
+            'type' => 'faiconselect',
+            'options_cb' => 'returnRayFapsa',
+            'attributes' => array(
+                'faver' => 5
+            ),
+            'sortable' => true,
+            'limit'         => 4,
+
+        )
+    );
+    $blog_post->add_group_field('social_repeat_group', array(
+        'name' => 'Social Link',
+        'id'   => 'social_link',
+        'type' => 'text',
+        'sortable' => true,
+        'limit'         => 4
+    ));
+    $blog_post->add_field(array(
         'name' => esc_html__('Date', 'aeptheme'),
         'desc' => esc_html__('Date Input Here', 'aeptheme'),
         'id'   => 'date-create-post',
@@ -33,7 +80,7 @@ function aepexpart_blog_post_fileds()
         'desc' => esc_html__('field description', 'aeptheme'),
         'id'   => 'button-link',
         'type' => 'text_url',
-        
+
     ));
 
     $blog_post->add_field(array(

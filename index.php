@@ -12,7 +12,7 @@ get_header();
     <div class="container">
         <div class="aep-service-hero-content">
             <span><?php if(!empty(aepexpert_get_option('blog-hero-name')))
-                {echo esc_html(aepexpert_get_option('blog-hero-name')) ;};?></span>
+                {echo esc_html(aepexpert_get_option('blog-hero-name')) ;}?></span>
             <h1><?php if(!empty(aepexpert_get_option('blog-hero-title')))
                 {echo esc_html(aepexpert_get_option('blog-hero-title')) ;};?></h1>
         </div>
@@ -41,8 +41,8 @@ get_header();
             <!-- single blog area start -->
             <div class="single-aep-blog-area">
                 <?php  if(has_post_thumbnail()){the_post_thumbnail('aep-blog-thumb');};?>                
-                <h3 class="my-4"><?php the_title();?></h3>
-                <p><?php echo wp_trim_words(the_content(),26,true)?></p>                
+                <a href="<?php the_permalink()?>"><h3 class="my-4"><?php the_title();?></h3></a>
+                <p><?php echo wp_trim_words( get_the_content(), 20, NULL );?></p>                
                 <div class="single-blog-meta-area flex items-center justify-between mt-3
                 mob:flex-col mob:items-start mob:gap-3">                
                     <div class="single-blog-meta-area-name flex items-center gap-2">
@@ -69,6 +69,4 @@ get_header();
     </div>
 </section>
 <!-- home page blog area end -->
-
-<a href="#" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></a>
 <?php get_footer() ?>
