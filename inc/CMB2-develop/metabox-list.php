@@ -104,7 +104,19 @@ function aepexpart_team_post_fileds()
 
 
     ));
-   
+    // single page meta
+    $team_post->add_field(array(
+        'name' => esc_html__('Thumbnail Uper BG', 'aeptheme'),
+        'desc' => esc_html__('Thumbnail Uper BG', 'aeptheme'),
+        'id'   => 'thumb-bg',
+        'type' => 'file',
+    ));
+    $team_post->add_field(array(
+        'name' => esc_html__('Position Member', 'aeptheme'),
+        'desc' => esc_html__('Position your Member', 'aeptheme'),
+        'id'   => 'position-team',
+        'type' => 'text',
+    ));   
     // team Social Link
     $team_post->add_field(array(
         'id'          => 'team-social_repeat_group',

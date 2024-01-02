@@ -1141,7 +1141,7 @@ span {
     border-radius: 45px;
 }
 
-.newsletter-form input#submit {
+.newsletter-form input#mc-embedded-subscribe {
     display: inline-flex;
     background: #FFCC4A;
     color: #181818;
@@ -1356,4 +1356,7 @@ span {
 
 .aep-service-hero-content{
     width: 838px;
+}
+.thumb-single-team img{
+    float: right;
 }

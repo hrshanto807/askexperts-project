@@ -34,6 +34,7 @@ function aepexpert_all_genarel()
     add_theme_support('post-thumbnails');
     add_image_size('aep-blog-thumb', 583, 321,true);
     add_image_size('aep-team-thumb', 366, 399,true);
+    add_image_size('aep-team--single-thumb', 478, 504,true);
 };
 add_action('after_setup_theme', 'aepexpert_all_genarel');
 

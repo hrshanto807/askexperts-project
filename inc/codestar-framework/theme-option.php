@@ -159,7 +159,7 @@ CSF::createSection($prefix, array(
 ));
 
 
-// team heading area
+// ready to talk area area
 CSF::createSection($prefix, array(
   'id'    => 'aep-section-ready-talk',
   'title' => 'Ready To talk Section',
@@ -184,6 +184,30 @@ CSF::createSection($prefix, array(
       'title' => 'Ready To Talk content',
       'type'  => 'textarea',
     ),   
+    
+  )
+));
+
+// newsletter area
+CSF::createSection($prefix, array(
+  'id'    => 'aep-section-newsletter',
+  'title' => 'Newsletter Section',
+  'fields' => array(   
+    array(
+      'id' => 'newsletter-img',
+      'title' => 'Newsletter Image',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'newsletter-name',
+      'title' => 'Newsletter Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'newsletter-title',
+      'title' => 'Newsletter Title',
+      'type'  => 'text',
+    ),  
     
   )
 ));
