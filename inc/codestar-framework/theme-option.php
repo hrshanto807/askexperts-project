@@ -56,7 +56,7 @@ CSF::createSection($prefix, array(
       'id' => 'blog-hero-bg',
       'title' => 'Blog Hero Bg',
       'type'  => 'media',
-    ),   
+    ),
     array(
       'id' => 'blog-hero-title',
       'title' => 'Blog Hero Title',
@@ -74,7 +74,7 @@ CSF::createSection($prefix, array(
       'id' => 'single-hero-bg',
       'title' => 'Single Hero Bg',
       'type'  => 'media',
-    ),   
+    ),
   )
 ));
 // team hero
@@ -86,10 +86,28 @@ CSF::createSection($prefix, array(
       'id' => 'team-hero-bg',
       'title' => 'Team Hero Bg',
       'type'  => 'media',
-    ),   
+    ),
     array(
       'id' => 'team-hero-title',
       'title' => 'Team Hero Title',
+      'type'  => 'text',
+    )
+  )
+));
+
+// contact hero hero
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'Contac Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'contact-hero-bg',
+      'title' => 'Contact Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'contact-hero-title',
+      'title' => 'Contact Hero Title',
       'type'  => 'text',
     )
   )
@@ -134,7 +152,7 @@ CSF::createSection($prefix, array(
 CSF::createSection($prefix, array(
   'parent'    => 'aep-section-content',
   'title' => 'Team Content',
-  'fields' => array(   
+  'fields' => array(
     array(
       'id' => 'team-title',
       'title' => 'Team Title',
@@ -163,7 +181,7 @@ CSF::createSection($prefix, array(
 CSF::createSection($prefix, array(
   'id'    => 'aep-section-ready-talk',
   'title' => 'Ready To talk Section',
-  'fields' => array(   
+  'fields' => array(
     array(
       'id' => 'ready-talk-img',
       'title' => 'Ready To Talk Image',
@@ -183,8 +201,8 @@ CSF::createSection($prefix, array(
       'id' => 'ready-talk-content',
       'title' => 'Ready To Talk content',
       'type'  => 'textarea',
-    ),   
-    
+    ),
+
   )
 ));
 
@@ -192,7 +210,7 @@ CSF::createSection($prefix, array(
 CSF::createSection($prefix, array(
   'id'    => 'aep-section-newsletter',
   'title' => 'Newsletter Section',
-  'fields' => array(   
+  'fields' => array(
     array(
       'id' => 'newsletter-img',
       'title' => 'Newsletter Image',
@@ -207,7 +225,58 @@ CSF::createSection($prefix, array(
       'id' => 'newsletter-title',
       'title' => 'Newsletter Title',
       'type'  => 'text',
-    ),  
-    
+    ),
+
+  )
+));
+
+
+// Contuct us Left area area
+CSF::createSection($prefix, array(
+  'id'    => 'aep-section-contact',
+  'title' => 'Contact Right Section',
+  'fields' => array(
+
+    array(
+      'id' => 'contact-us-name',
+      'title' => 'Contact us Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'contact-us-title',
+      'title' => 'Contact us Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'contact-us-content',
+      'title' => 'Contact us Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'contact-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Contact_us NUM',
+      'button_title'=> 'ADD ANOTHER NUM',
+      'fields' => array(
+
+        array(
+          'id'    => 'contact-icon',
+          'type'  => 'icon',
+          'title' => 'Contact icon'
+        ),
+        array(
+          'id'    => 'contact-title',
+          'type'  => 'text',
+          'title' => 'title'
+        ),
+        array(
+          'id'    => 'contact-content',
+          'type'  => 'text',
+          'title' => 'COntent'
+        ),
+
+      ),
+    ),
+
   )
 ));

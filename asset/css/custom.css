@@ -1360,3 +1360,8 @@ span {
 .thumb-single-team img{
     float: right;
 }
+span.wpcf7-form-control-wrap,
+.nojq span{
+    background-color: transparent;
+    color: white;
+}
