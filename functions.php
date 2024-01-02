@@ -21,7 +21,7 @@ function aepexpert_all_scripts()
     wp_enqueue_script('magnific-popup', get_theme_file_uri('/asset/js/jquery.magnific-popup.min.js'), array('jquery'), '3.7.1', true);
     wp_enqueue_script('lightbox-min', get_theme_file_uri('/asset/js/lightbox.min.js'), array('jquery'), '3.7.1', true);
     wp_enqueue_script('circle-progress', get_theme_file_uri('/asset/js/circle-progress.min.js'), array('jquery'), '3.7.1', true);
-    wp_enqueue_script('mixitup-min', get_theme_file_uri('/asset/js/mixitup.min.js'), array('jquey'), '3.7.1', true);
+    wp_enqueue_script('mixitup', get_theme_file_uri('/asset/js/mixitup.min.js'), array('jquery'), '3.7.1', true);
     wp_enqueue_script('owl-cerousel', get_theme_file_uri('/asset/js/owl.carousel.min.js'), array('jquery'), '3.7.1', true);
     wp_enqueue_script('aep-experts-custom-js', get_theme_file_uri('/asset/js/custom.js'), array('jquery'), '3.7.1', true);
 };
@@ -35,6 +35,7 @@ function aepexpert_all_genarel()
     add_image_size('aep-blog-thumb', 583, 321,true);
     add_image_size('aep-team-thumb', 366, 399,true);
     add_image_size('aep-team--single-thumb', 478, 504,true);
+    add_image_size('aep-port-single-thumb', 367, 345,true);
 };
 add_action('after_setup_theme', 'aepexpert_all_genarel');
 

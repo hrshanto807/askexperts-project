@@ -31,28 +31,45 @@ function aeptheme_custom_posts()
         'supports'   => array('title', 'editor', 'thumbnail')
     ));
 
-    // // Register CPT Cases 
+       // Register CPT Portfolio 
+    register_post_type('aep-portfolio', array(
+        'labels'     => array(
+            'name'             => esc_html(__('Portfolio', 'aeptheme')),
+            'singular_name'    => esc_html(__('Portfolio', 'aeptheme')),
+            'add_new'          => esc_html(__('Add New Portfolio', 'aeptheme')),
+            'not_found'        => esc_html(__('not Portfolio found', 'aeptheme')),
+            'add_new_item'     => esc_html(__('Add New Portfolio', 'aeptheme')),
+            'edit_item'        => esc_html(__('Edit Portfolio', 'aeptheme')),
+            'featured_image'   => esc_html(__('Project Image', 'aeptheme')),
+            'set_featured_image' => esc_html(__('Set Project Image', 'aeptheme')),
+            'remove_featured_image' => esc_html(__('Remove Project Image', 'aeptheme')),
 
-    // register_post_type('aeptheme-cases', array(
-    //     'labels'     => array(
-    //         'name'             => esc_html(__('Cases', 'aeptheme')),
-    //         'singular_name'    => esc_html(__('Case', 'aeptheme')),
-    //         'add_new'          => esc_html(__('Add New Case', 'aeptheme')),
-    //         'not_found'        => esc_html(__('not Case found', 'aeptheme')),
-    //         'add_new_item'     => esc_html(__('Add New Case', 'aeptheme')),
-    //         'edit_item'        => esc_html(__('Edit Case', 'aeptheme')),
 
+        ),
+        'public'     => true,
+        'rewrite'    => array(
+            'slug'               => 'Portfolio'
+        ),
+        'menu_icon'  =>  'dashicons-products',
+        'capability_type' => 'page',
+        'supports'     =>  array('title', 'editor','thumbnail'),
 
-    //     ),
-    //     'public'     => true,
-    //     'rewrite'    => array(
-    //         'slug'               => 'case'
-    //     ),
-    //     'menu_icon'  =>  'dashicons-editor-spellcheck',
-    //     'capability_type' => 'page',
-    //     'supports'     =>  array('title', 'editor', 'comments', 'revisions', 'trackbacks', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats'),
+    ));
+    register_taxonomy(
+        'portifolio-cat',   // register name
+        'aep-portfolio', // Post Type
+        array(
+            'hierarchical'   => true,
+            'label'          => 'Categories', // Display Name
+            'query_var'      => true,
+            'show_admin_column' =>true,
+            'rewrite'       => array( 
+                'slug'     =>  'portifolio-catagory',// ths controls the base slug that will display before each term
+                'with_front'=> true // Don't display the catagory base before
+            )
+        ),
+    );
 
-    // ));
 };
 
 

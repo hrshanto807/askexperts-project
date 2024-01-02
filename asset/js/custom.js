@@ -162,7 +162,7 @@
 
     // mixitop area
 
-    // var mixer = mixitup('.aep-case-gellary-img');
+     var mixer = mixitup('.aep-case-gellary-img');
 
 
 })(jQuery);

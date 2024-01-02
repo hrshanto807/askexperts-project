@@ -27,7 +27,7 @@
 }
 
 .aep-btn,
-#submit {
+.contact-form input.wpcf7-submit{
 
     display: inline-block;
     padding: 16px 33px;
@@ -1173,7 +1173,7 @@ span {
     margin-bottom: 50px;
 }
 
-.portfollio-controlar a {
+.portfollio-controlar button {
     color: #FFF;
     font-family: Cabin;
     font-size: 25px;
@@ -1184,7 +1184,7 @@ span {
     border-bottom: 1px solid transparent;
 }
 
-.portfollio-controlar a:hover {
+.portfollio-controlar button:hover {
     color: var(--aep-primary-color);
     border-bottom: 1px solid var(--aep-primary-color);
 
@@ -1365,3 +1365,6 @@ span.wpcf7-form-control-wrap,
     background-color: transparent;
     color: white;
 }
+
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }

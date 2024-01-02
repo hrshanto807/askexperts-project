@@ -95,7 +95,19 @@ CSF::createSection($prefix, array(
   )
 ));
 
-// contact hero hero
+// Case hero bg
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'Case Studies Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'case-hero-bg',
+      'title' => 'Case Studies Hero Bg',
+      'type'  => 'media',
+    ),    
+  )
+));
+// contact hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
   'title' => 'Contac Page Hero BG',
