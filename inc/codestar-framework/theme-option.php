@@ -127,6 +127,24 @@ CSF::createSection($prefix, array(
 // Case single hero 
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
+  'title' => 'Single Service Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'service-single-hero-bg',
+      'title' => ' Single Service Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'service-single-hero-name',
+      'title' => ' Single Service Name',
+      'type'  => 'text',
+    ),
+
+  )
+));
+// Case single hero 
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
   'title' => 'Single Case Studies Page Hero BG',
   'fields' => array(
     array(
@@ -191,7 +209,7 @@ CSF::createSection($prefix, array(
       'id' => 'service-title',
       'title' => 'Services Title',
       'type'  => 'text',
-    ),   
+    ),
   )
 ));
 // blog heading area
@@ -360,6 +378,61 @@ CSF::createSection($prefix, array(
   'title' => 'Services  Section',
 ));
 
+// Single Sevice Testi
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-srvice',
+  'title' => 'SerVice Consult Section',
+  'fields' => array(
+
+    array(
+      'id' => 'conult-services-bg',
+      'title' => 'Consult Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'conult-services-thumb',
+      'title' => 'Consult Thumb',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'conult-services-name',
+      'title' => 'Consult name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'conult-services-title',
+      'title' => 'Consult Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id'     => 'conslut-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Consult Content Area',
+      'button_title' => 'Add Consult List',
+      'fields' => array(
+
+        array(
+          'id'    => 'conult-services-icon',
+          'type'  => 'icon',
+          'title' => 'Consult Icon'
+        ),
+        array(
+          'id'    => 'conult-services-heading',
+          'type'  => 'text',
+          'title' => 'Consult Heading Tag'
+        ),
+        array(
+          'id'    => 'conult-services-content',
+          'type'  => 'textarea',
+          'title' => 'Contsult Content'
+
+        )
+      )
+    )
+  )
+
+
+));
 // Consulting service
 CSF::createSection($prefix, array(
   'parent'    => 'aep-section-srvice',
@@ -407,10 +480,13 @@ CSF::createSection($prefix, array(
           'id'    => 'conult-services-content',
           'type'  => 'textarea',
           'title' => 'Contsult Content'
-      
-        ))))
-    
- 
+
+        )
+      )
+    )
+  )
+
+
 ));
 // sevices Prices List 
 CSF::createSection($prefix, array(
@@ -484,4 +560,119 @@ CSF::createSection($prefix, array(
       )
     )
   )
+));
+// Brand Logo
+CSF::createSection($prefix, array(
+  'id'    => 'aep-brand-logo',
+  'title' => 'Brand LOgo Area',
+  'fields' => array(
+    array(
+      'id'     => 'logo-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Price List Area',
+      'button_title' => 'Add brand Image',
+      'fields' => array(
+
+        array(
+          'id'    => 'brand-logo',
+          'type'  => 'media',
+          'title' => 'Brand Logo'
+        ),
+
+      )
+    )
+  )
+));
+
+// sevices History Area
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-srvice',
+  'title' => 'History Area',
+  'fields' => array(
+
+    array(
+      'id'    => 'histoy-bg',
+      'type'  => 'media',
+      'title' => 'History BG'
+    ),
+    array(
+      'id'    => 'histoy-name',
+      'type'  => 'text',
+      'title' => 'History Name'
+    ),
+    array(
+      'id'    => 'histoy-title',
+      'type'  => 'text',
+      'title' => 'History Title'
+    ),
+    array(
+      'id'    => 'histoy-link-video',
+      'type'  => 'text',
+      'title' => 'Video Link'
+    ),
+    array(
+      'id'    => 'histoy-img',
+      'type'  => 'media',
+      'title' => 'History Image'
+    ),
+
+  )
+));
+
+
+// Single Service Expect Area
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-srvice',
+  'title' => 'Single Service Expect Section',
+  'fields' => array(
+
+    array(
+      'id' => 'expect-services-bg',
+      'title' => 'What Expect Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'expect-services-thumb',
+      'title' => 'What Expect Thumb',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'expect-services-name',
+      'title' => 'What Expect name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'expect-services-title',
+      'title' => 'What Expect Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'expect-services-content',
+      'title' => 'What Expect Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'expect-repeater',
+      'type'   => 'repeater',
+      'title'  => 'What Expect Content Area',
+      'button_title' => 'Add Consult List',
+      'limit' => 2,
+      'fields' => array(
+
+        array(
+          'id'    => 'expect-services-icon',
+          'type'  => 'icon',
+          'title' => 'What Expect Icon'
+        ),       
+        array(
+          'id'    => 'expect-services-content',
+          'type'  => 'textarea',
+          'title' => 'What Expect Content'
+
+        )
+      )
+    )
+  )
+
+
 ));

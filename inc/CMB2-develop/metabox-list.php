@@ -183,3 +183,28 @@ function aepexpart_portfollio_fileds()
    
 }
 add_action('cmb2_admin_init', 'aepexpart_portfollio_fileds');
+// Testi icon
+
+function aepexpart_testimonial_fileds()
+{
+    $team_post = new_cmb2_box(array(
+        'id' => 'testi-icon',
+        'title' => esc_html(__('TestiMonial Icon', 'aeptheme')),
+        'object_types'  => array('aeptheme-testimonial'),
+
+
+    ));
+    // single page meta
+    $team_post->add_field(array(
+        'name' => esc_html__('Icon', 'aeptheme'),
+        'desc' => esc_html__('Slect Your Icon', 'aeptheme'),
+        'id'   => 'test-icon',
+        'type' => 'faiconselect',
+        'options_cb' => 'returnRayFapsa',
+        'attributes' => array(
+            'faver' => 5
+        ),
+    ));
+
+}
+add_action('cmb2_admin_init', 'aepexpart_testimonial_fileds');

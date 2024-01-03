@@ -103,6 +103,51 @@ function aeptheme_custom_posts()
         )
     );
 
+    // register CPT FAQs
+    register_post_type('aeptheme-faq', array(
+        'labels'        =>  array(
+            'name'            =>  __('FAQs', 'aeptheme'),
+            'singular_name'   =>  __('FAQ', 'aeptheme'),
+            'add_new'         =>  __('Add New FAQ', 'aeptheme'),
+            'add_new_item'       =>  __('Add New Item FAQ', 'aeptheme'),
+            'edit_item'       =>  __('Edit FAQ', 'aeptheme'),
+            'view_item'       =>  __('View FAQ', 'aeptheme'),
+            'view_items'       =>  __('View FAQ', 'aeptheme'),
+            'new_items'       =>  __('New FAQ', 'aeptheme'),
+            'not_found'       =>   __('Sorry! Not FAQs Found', 'aeptheme'),
+            'item_published'  => __('View FAQs', 'aeptheme'),
+            'item_updated'  => __('View FAQs', 'aeptheme'),
+        ),
+        'public'       =>  true,
+        'supports'     =>  array('title', 'editor'),
+        'menu_icon'    =>  'dashicons-edit',
+        'rewrite'     =>   array('slug' => 'faq'),
+        'capability_type'     =>  'page',
+        'menu_position'     =>  15,
+
+    ));
+    
+    // Register CPT Testimonial
+    register_post_type('aeptheme-testimonial', array(
+        'labels'          => array(
+            'name'             => esc_html(__('Testimonals', 'aeptheme')),
+            'singular_name'    => esc_html(__('testimonial', 'aeptheme')),
+            'add_new'          => esc_html(__('Add New Testimonial', 'aeptheme')),
+            'not_found'        => esc_html(__('not found testimonial', 'aeptheme')),
+            'edit_item'        => esc_html(__('Edit Testimonial', 'aeptheme')),
+            'add_new_item'     => esc_html(__('Add New testimonial', 'aeptheme')),            
+
+        ),
+        'menu_icon'      => 'dashicons-slides',
+        'rewrite'        => array(
+            'slug'             => 'testimonail'
+        ),
+        'capability_type' => 'page',
+        'public'         => true,
+        'supports'   => array('title', 'editor',)
+
+    ));
+
 };
 
 
