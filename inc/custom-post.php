@@ -10,6 +10,27 @@ if (!defined('ABSPATH')) {
 function aeptheme_custom_posts()
 {
     // register CPT teams
+    register_post_type('aeptheme-sevice', array(
+        'labels'  =>  array(
+            'name'             => esc_html(__('Services', 'aeptheme')),
+            'singular_name'    => esc_html(__('Service', 'aeptheme')),
+            'add_new'          => esc_html(__('Add New Service', 'aeptheme')),
+            'not_found'        => esc_html(__('not found Service', 'aeptheme')),
+            'edit_item'        => esc_html(__('Edit Service', 'aeptheme')),
+            'add_new_item'     => esc_html(__('Add New Service', 'aeptheme')),
+            'featured_image'   => esc_html(__('Service  Image', 'aeptheme')),
+            'set_featured_image' => esc_html(__('Set Service  Image', 'aeptheme')),
+            'remove_featured_image' => esc_html(__('Remove Service  Image', 'aeptheme')),
+        ),
+        'menu_icon'      => 'dashicons-admin-tools',
+        'rewrite'        => array(
+            'slug'             => 'service'
+        ),
+        'capability_type' => 'page',
+        'public'         => true,
+        'supports'   => array('title', 'editor', 'thumbnail')
+    ));
+    // register CPT teams
     register_post_type('aeptheme-teams', array(
         'labels'  =>  array(
             'name'             => esc_html(__('Teams', 'aeptheme')),

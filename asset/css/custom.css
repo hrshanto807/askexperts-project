@@ -931,7 +931,7 @@ span {
     list-style: none;
 }
 
-.single-all-prices-list li a {
+.single-all-prices-list li {
     color: var(--aep-text-color);
     font-family: var(--aep-secondary-font);
     font-size: 16px;
@@ -940,7 +940,7 @@ span {
     line-height: 251.5%;
 }
 
-.single-all-prices-list li a::before {
+.single-all-prices-list li::before {
     content: "\f054";
     color: var(--aep-bc-color);
     font-family: 'FontAwesome';

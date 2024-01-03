@@ -94,6 +94,23 @@ CSF::createSection($prefix, array(
     )
   )
 ));
+// sevices hero
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'Service Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'service-hero-bg',
+      'title' => 'Service Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'service-hero-title',
+      'title' => 'Service Hero Title',
+      'type'  => 'text',
+    )
+  )
+));
 
 // Case hero bg
 CSF::createSection($prefix, array(
@@ -104,7 +121,7 @@ CSF::createSection($prefix, array(
       'id' => 'case-hero-bg',
       'title' => 'Case Studies Hero Bg',
       'type'  => 'media',
-    ),    
+    ),
   )
 ));
 // Case single hero 
@@ -116,12 +133,23 @@ CSF::createSection($prefix, array(
       'id' => 'case-single-hero-bg',
       'title' => ' Single Case Studies Hero Bg',
       'type'  => 'media',
-    ),    
+    ),
     array(
       'id' => 'case-single-hero-name',
       'title' => ' Single Case Studies Name',
       'type'  => 'text',
-    ),    
+    ),
+    array(
+      'id' => 'case-single-bottom-button-src',
+      'title' => ' Single Case Studies Bottom Button link For More Browse All Case',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'case-single-bottom-button-name',
+      'title' => ' Single Case Studies Bottom Button name For More Browse All Case',
+      'type'  => 'text',
+    ),
+
   )
 ));
 // contact hero bg
@@ -148,6 +176,23 @@ CSF::createSection($prefix, array(
   'id'    => 'aep-section-content',
   'title' => 'All Section Heading Content',
   'icon'  => 'fas fa-heading',
+));
+// service heading area
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-content',
+  'title' => 'Services Content',
+  'fields' => array(
+    array(
+      'id' => 'service-name',
+      'title' => 'Services Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'service-title',
+      'title' => 'Services Title',
+      'type'  => 'text',
+    ),   
+  )
 ));
 // blog heading area
 CSF::createSection($prefix, array(
@@ -285,7 +330,7 @@ CSF::createSection($prefix, array(
       'id'     => 'contact-repeater',
       'type'   => 'repeater',
       'title'  => 'Contact_us NUM',
-      'button_title'=> 'ADD ANOTHER NUM',
+      'button_title' => 'ADD ANOTHER NUM',
       'fields' => array(
 
         array(
@@ -307,5 +352,136 @@ CSF::createSection($prefix, array(
       ),
     ),
 
+  )
+));
+// sevices  
+CSF::createSection($prefix, array(
+  'id'    => 'aep-section-srvice',
+  'title' => 'Services  Section',
+));
+
+// Consulting service
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-srvice',
+  'title' => 'SerVice Consult Section',
+  'fields' => array(
+
+    array(
+      'id' => 'conult-services-bg',
+      'title' => 'Consult Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'conult-services-thumb',
+      'title' => 'Consult Thumb',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'conult-services-name',
+      'title' => 'Consult name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'conult-services-title',
+      'title' => 'Consult Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id'     => 'conslut-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Consult Content Area',
+      'button_title' => 'Add Consult List',
+      'fields' => array(
+
+        array(
+          'id'    => 'conult-services-icon',
+          'type'  => 'icon',
+          'title' => 'Consult Icon'
+        ),
+        array(
+          'id'    => 'conult-services-heading',
+          'type'  => 'text',
+          'title' => 'Consult Heading Tag'
+        ),
+        array(
+          'id'    => 'conult-services-content',
+          'type'  => 'textarea',
+          'title' => 'Contsult Content'
+      
+        ))))
+    
+ 
+));
+// sevices Prices List 
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-section-srvice',
+  'title' => 'SerVice Price Section',
+  'fields' => array(
+
+    array(
+      'id' => 'price-name',
+      'title' => 'Price Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'price-title',
+      'title' => 'Price Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id'     => 'price-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Price List Area',
+      'button_title' => 'Add Price List',
+      'fields' => array(
+
+        array(
+          'id'    => 'price-plan',
+          'type'  => 'text',
+          'title' => 'Price Plan'
+        ),
+        array(
+          'id'    => 'price-content',
+          'type'  => 'text',
+          'title' => 'Price Content Short'
+        ),
+        array(
+          'id'    => 'price-doller',
+          'type'  => 'text',
+          'title' => 'Doller'
+        ),
+        array(
+          'id'    => 'price-date',
+          'type'  => 'text',
+          'title' => 'Peckage'
+        ),
+        array(
+          'id'     => 'price-support-repeater',
+          'type'   => 'repeater',
+          'title'  => 'Price support Area',
+          'button_title' => 'Add Support',
+          'fields' => array(
+            array(
+              'id'    => 'price-support',
+              'type'  => 'text',
+              'title' => 'Price Support'
+            ),
+          )
+        ),
+        array(
+          'id'    => 'price-button',
+          'type'  => 'text',
+          'title' => 'Button Name'
+        ),
+
+        array(
+          'id'    => 'price-button-link',
+          'type'  => 'text',
+          'title' => 'Button Link'
+        ),
+
+
+      )
+    )
   )
 ));

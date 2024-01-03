@@ -106,7 +106,11 @@ get_header();
                 endif; ?>                
             </div>
             <!-- single case area end -->
-            <a href="#" class="aep-btn">Browse all case studies</a>
+            <a href="<?php if(!empty(aepexpert_get_option('case-single-bottom-button-src'))){
+                echo esc_url(aepexpert_get_option('case-single-bottom-button-src'));
+            };?>" class="aep-btn"><?php if(!empty(aepexpert_get_option('case-single-bottom-button-name'))){
+                echo esc_html(aepexpert_get_option('case-single-bottom-button-name'));
+            };?></a>
         </div>
     </div>
 </section>
