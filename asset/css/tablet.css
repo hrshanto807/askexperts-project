@@ -15,10 +15,12 @@
         --aep-bc-color: #F5F5F5;
 
     }
-    h1{
+
+    h1 {
         font-size: 35px;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
     }
 
@@ -259,7 +261,7 @@
         flex-direction: column;
     }
 
-    .blog-details-author-details img{
+    .blog-details-author-details img {
         width: 125px;
         gap: 20px;
     }
@@ -268,18 +270,28 @@
         padding: 30px;
 
     }
-.btn-footer.log{
-    width: 300px;
-}
-.aep-license-content h2{
-    border-bottom: 10px solid var(--aep-text-color);
-    width: 100px;
-}
+
+    .btn-footer.log {
+        width: 300px;
+    }
+
+    .aep-license-content h2 {
+        border-bottom: 10px solid var(--aep-text-color);
+        width: 100px;
+    }
 
 
-.aep-service-hero-content{
-    width: 100%;
-}
+    .aep-service-hero-content {
+        width: 100%;
+    }
+
+    .aep-single-case .thumb img {
+        width: 100%;
+    }
+
+    .all-sinle-content-here img {
+        width: 100%;
+    }
 
 
 

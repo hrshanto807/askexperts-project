@@ -27,7 +27,7 @@
 }
 
 .aep-btn,
-.contact-form input.wpcf7-submit{
+.contact-form input.wpcf7-submit {
 
     display: inline-block;
     padding: 16px 33px;
@@ -1266,8 +1266,9 @@ span {
     flex-direction: column;
     gap: 10px;
 }
-.li-area-blog ul li{
-   list-style: disc;
+
+.li-area-blog ul li {
+    list-style: disc;
 }
 
 .li-area-blog li a {
@@ -1275,7 +1276,7 @@ span {
 
 }
 
-.li-area-blog.two ul li{
+.li-area-blog.two ul li {
     list-style: decimal;
 
 }
@@ -1283,7 +1284,8 @@ span {
 .all-single-content-here h2 {
     margin-top: 40px;
 }
-.all-single-content-here img{
+
+.all-single-content-here img {
     width: 100%;
 }
 
@@ -1347,24 +1349,34 @@ span {
     flex-direction: column;
     gap: 81px;
 }
-.aep-license-content h3{
+
+.aep-license-content h3 {
     margin-top: 40px;
 }
-.aep-license-content p{
-   margin-top: 20px;
+
+.aep-license-content p {
+    margin-top: 20px;
 }
 
-.aep-service-hero-content{
+.aep-service-hero-content {
     width: 838px;
 }
-.thumb-single-team img{
+
+.thumb-single-team img {
     float: right;
 }
+
 span.wpcf7-form-control-wrap,
-.nojq span{
+.nojq span {
     background-color: transparent;
     color: white;
 }
 
-.grid-item { width: 25%; }
-.grid-item--width2 { width: 50%; }
+.aep-single-case .thumb img {
+    width: 1200px;
+    height: 453px;
+}
+
+.all-sinle-content-here img {
+    width: 636px;
+}

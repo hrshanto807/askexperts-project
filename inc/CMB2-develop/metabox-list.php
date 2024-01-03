@@ -155,3 +155,31 @@ function aepexpart_team_post_fileds()
    
 }
 add_action('cmb2_admin_init', 'aepexpart_team_post_fileds');
+
+// Team page Meta List
+
+function aepexpart_portfollio_fileds()
+{
+    $team_post = new_cmb2_box(array(
+        'id' => 'meta-button',
+        'title' => esc_html(__('Button Name Link', 'aeptheme')),
+        'object_types'  => array('aep-portfolio'),
+
+
+    ));
+    // single page meta
+    $team_post->add_field(array(
+        'name' => esc_html__('Button NAme', 'aeptheme'),
+        'desc' => esc_html__('Write Name Your Button', 'aeptheme'),
+        'id'   => 'port-btn',
+        'type' => 'text',
+    ));
+    $team_post->add_field(array(
+        'name' => esc_html__('Button Link', 'aeptheme'),
+        'desc' => esc_html__('Set Button Link', 'aeptheme'),
+        'id'   => 'port-btn-link',
+        'type' => 'text',
+    ));   
+   
+}
+add_action('cmb2_admin_init', 'aepexpart_portfollio_fileds');

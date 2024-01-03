@@ -52,9 +52,10 @@ function aeptheme_custom_posts()
         ),
         'menu_icon'  =>  'dashicons-products',
         'capability_type' => 'page',
-        'supports'     =>  array('title', 'editor','thumbnail'),
+        'supports'     =>  array('title', 'editor','thumbnail','tags'),
 
     ));
+    // register catagory
     register_taxonomy(
         'portifolio-cat',   // register name
         'aep-portfolio', // Post Type
@@ -68,6 +69,17 @@ function aeptheme_custom_posts()
                 'with_front'=> true // Don't display the catagory base before
             )
         ),
+    );
+    // resister tag
+    register_taxonomy(
+        'aep_portofollio_tags',  // Change this to your desired taxonomy name
+        'aep-portfolio',  // Change this to your custom post type name
+        array(
+            'label' => 'Custom Post Tags',
+            'hierarchical' => false,
+            'public' => true,
+            'rewrite' => array('slug' => 'portofollio_tags'),
+        )
     );
 
 };

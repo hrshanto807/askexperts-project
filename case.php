@@ -51,12 +51,12 @@ get_header();
                                                                                 echo $the_port_cat->slug . " ";
                                                                             endforeach;
                                                                         endif; ?>">
-                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                            <a href="<?php the_permalink()?>"><i class="fa-solid fa-plus"></i></a>
                             <a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
                                                                     echo esc_url(the_post_thumbnail('aep-port-single-thumb'));
                                                                 } ?></a>
                             <div class="gellary-aep-home-content absolute">
-                                <h4 class="text-white">Taxes & Efficiency</h4>
+                                <h4 class="text-white"><?php the_title()?></h4>
                                 <p class="text-yellow-500">Business</p>
                             </div>
                         </div>
