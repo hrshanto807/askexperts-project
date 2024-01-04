@@ -211,7 +211,7 @@ CSF::createSection($prefix, array(
 // contact hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
-  'title' => 'Contac Page Hero BG',
+  'title' => 'Contact Page Hero BG',
   'fields' => array(
     array(
       'id' => 'contact-hero-bg',
@@ -221,6 +221,23 @@ CSF::createSection($prefix, array(
     array(
       'id' => 'contact-hero-title',
       'title' => 'Contact Hero Title',
+      'type'  => 'text',
+    )
+  )
+));
+// contact hero bg
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'License Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'license-hero-bg',
+      'title' => 'License Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'license-hero-title',
+      'title' => 'License Hero Title',
       'type'  => 'text',
     )
   )
