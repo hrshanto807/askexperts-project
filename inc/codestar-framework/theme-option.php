@@ -207,6 +207,7 @@ CSF::createSection($prefix, array(
 
   )
 ));
+
 // contact hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
@@ -224,7 +225,38 @@ CSF::createSection($prefix, array(
     )
   )
 ));
-
+// change log hero bg
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'Change Log Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'change-hero-bg',
+      'title' => 'Change Log Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'change-hero-title',
+      'title' => 'Change Log Hero Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'change-title',
+      'title' => 'Change Log Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'change-btn',
+      'title' => 'Change Log Button',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'change-btn-link',
+      'title' => 'Change Log Button Link',
+      'type'  => 'text',
+    )
+  )
+));
 
 // all section heading Content Area 
 CSF::createSection($prefix, array(
