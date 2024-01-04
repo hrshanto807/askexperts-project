@@ -966,8 +966,6 @@ CSF::createSection($prefix, array(
 
   )
 ));
-
-
 // Single Service Expect Area
 CSF::createSection($prefix, array(
   'parent'    => 'aep-section-srvice',
@@ -1021,6 +1019,39 @@ CSF::createSection($prefix, array(
       )
     )
   )
-
-
 ));
+
+//404 Page 
+CSF::createSection($prefix, array(
+  'id'    => 'aep-error-page',
+  'title' => 'Error Page',
+  'fields' => array(
+    array(
+      'id' => 'error-thumb',
+      'title' => 'What Expect Bg',
+      'type'  => 'media',
+    ),    
+    
+    array(
+      'id' => 'error-title',
+      'title' => 'What Expect Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'error-content',
+      'title' => 'What Expect Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id' => 'error-btn',
+      'title' => 'Error Page Button Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'error-btn-link',
+      'title' => 'Error Page Button Link',
+      'type'  => 'text',
+    ),
+   
+
+)));
