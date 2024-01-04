@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head()?>
+    <?php wp_head() ?>
 </head>
 
 <body>
     <header>
         <!-- header top start -->
         <section class="aep-header-toparea-all bg-black">
-            <div class="container py-4 tab:hidden">
-                <div class="aep-header-top-area flex justify-between items-center ">
-                    <div class="aep-headertop-time-area flex items-center justify-center gap-1">
-                        <i class="text-yellow-400 fa-regular fa-clock"></i>
-                        <p class="text-white">Monday - Friday8AM - 9PM</p>
-                    </div>
-                    <div class="aep-headertop-location-area flex items-center justify-center gap-1">
-                        <i class="text-yellow-400 fa-solid fa-location-dot"></i>
-                        <p class="text-white">725 Park Ave, New York</p>
-                    </div>
-                    <div class="aep-headertop-social-area flex items-center justify-center gap-6 ">
-                        <a href="#"><i class="text-white fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="text-white fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="text-white fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="text-white fa-brands fa-linkedin"></i></a>
-                    </div>
+            <div class="container py-4 tab:hidden flex justify-between items-center">
+                <div class="aep-header-top-area flex gap-40 items-center ">
+                    <?php $header_top_left = aepexpert_get_option('home-header_top-repeater');
+                    if (!empty($header_top_left)) : foreach ($header_top_left as $header_top_l) :; ?>
+                            <div class="aep-headertop-time-area flex items-center justify-center gap-1">
+                                <i class="text-yellow-400 <?php if (!empty($header_top_l)) {
+                                                                echo esc_attr($header_top_l['header-left-icon']);
+                                                            }; ?>"></i>
+                                <p class="text-white"><?php if (!empty($header_top_l)) {
+                                                            echo esc_html($header_top_l['header-left-content']);
+                                                        }; ?></p>
+                            </div>
+                    <?php endforeach;
+                    endif; ?>
+                </div>
+                <div class="aep-headertop-social-area flex items-center justify-center gap-4 ">
+                    <?php $consult_services = aepexpert_get_option('header-social-repeater');
+                    if (!empty($consult_services)) : foreach ($consult_services as $consult) :; ?>
+                            <a href="<?php if (!empty($consult)) {
+                                            echo esc_url($consult['social-link']);
+                                        }; ?>"><i class="text-white <?php if (!empty($consult)) {
+                                                                        echo esc_attr($consult['social-icon']);
+                                                                    }; ?>"></i></a>
+
+                    <?php endforeach;
+                    endif; ?>
                 </div>
             </div>
         </section>
@@ -37,7 +47,11 @@
                 <div class="header-area flex justify-between items-center">
                     <!-- heading logo area start -->
                     <div class="header-logo">
-                        <img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt="">
+                        <img src="<?php $header_logo = aepexpert_get_option('logo-header');
+                                    if (!empty($header_logo)) {
+                                        echo esc_url($header_logo['url']);
+                                    };
+                                    ?>" alt="">
                     </div>
                     <!-- heading logo area end -->
                     <!-- header  menu area start -->
@@ -45,30 +59,13 @@
                         <a href="#"><i class="fa-solid fa-bars"></i></a>
                         <nav id="main_menu">
                             <div class="header_menu">
-                                <ul id="nav">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="service.html">Service</a>
-                                        <ul>
-                                            <li><a href="#">DropdownMenu</a></li>
-                                            <li><a href="#">DropdownMenu</a></li>
-                                            <li><a href="#">DropdownMenu</a>
-                                                <ul>
-                                                    <li><a href="#">menu-3</a></li>
-                                                    <li><a href="#">menu-3</a></li>
-                                                    <li><a href="#">menu-3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">DropdownMenu</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="case-studies.html">Case</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                </ul>
+                                <?php
+                                wp_nav_menu(array(
+                                    'theme_location'  =>  'header_menu',
+                                ));
+                                ?>
                             </div>
                         </nav>
-
                     </div>
                     <!-- header  menu area end -->
                     <!-- header  right area start-->

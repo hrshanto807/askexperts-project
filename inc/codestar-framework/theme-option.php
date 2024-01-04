@@ -10,12 +10,121 @@ $prefix = 'aepexpert_framwork';
 //
 // Create options
 //
-
 CSF::createOptions($prefix, array(
   'menu_title' => 'Theme Option',
   'menu_slug'  => 'aep-theme-option',
 
 ));
+
+ // Logo
+CSF::createSection($prefix, array(
+  'id'    => 'aep-logo',
+  'title' => 'Aep Theme Logo ',
+  'fields' => array(
+    array(
+      'id'     => 'logo-header',
+      'type'   => 'media',
+      'title'  => 'Header Logo',      
+    ),
+    array(
+      'id'     => 'logo-footer',
+      'type'   => 'media',
+      'title'  => 'Footer Logo',
+      
+    ))));
+// header top
+CSF::createSection($prefix, array(
+  'id'    => 'aep-header-top',
+  'title' => 'Header Top',
+  'icon'  => 'far fa-images',
+));
+// home header top content
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-header-top',
+  'title' => 'Home Page Hero ',
+  'fields' => array(
+    array(
+      'id'     => 'home-header_top-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home Header top Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
+
+        array(
+          'id'    => 'header-left-icon',
+          'type'  => 'icon',
+          'title' => 'Time icon'
+        ),
+        array(
+          'id'    => 'header-left-content',
+          'type'  => 'text',
+          'title' => 'Write Time And Location'
+        ),      
+
+      ),
+    ),
+   
+)));
+// Social Profile
+CSF::createSection($prefix, array(
+  'id'    => 'aep-header-social',
+  'title' => 'Aep Theme Social ',
+));
+// home header social
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-header-social',
+  'title' => 'Header Social ',
+  'fields' => array(
+    array(
+      'id'     => 'header-social-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Header Social Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
+
+        array(
+          'id'    => 'social-icon',
+          'type'  => 'icon',
+          'title' => 'Header Social icon'
+        ),
+        array(
+          'id'    => 'social-link',
+          'type'  => 'text',
+          'title' => 'Header Social Link'
+        ),      
+
+      ),
+    ),
+   
+)));
+
+// Footer social
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-header-social',
+  'title' => 'Footer Social ',
+  'fields' => array(
+    array(
+      'id'     => 'footer-social-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Footer Social Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
+
+        array(
+          'id'    => 'social-name',
+          'type'  => 'text',
+          'title' => 'Footer Social Name'
+        ),
+        array(
+          'id'    => 'social-link-f',
+          'type'  => 'text',
+          'title' => 'Footer Social Link'
+        ),      
+
+      ),
+    ),
+   
+)));
 
 //
 // Hero Bg area
@@ -25,6 +134,7 @@ CSF::createSection($prefix, array(
   'title' => 'All Hero Section Here',
   'icon'  => 'far fa-images',
 ));
+
 // home hero
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
@@ -225,7 +335,7 @@ CSF::createSection($prefix, array(
     )
   )
 ));
-// contact hero bg
+//licence hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
   'title' => 'License Page Hero BG',
@@ -274,6 +384,7 @@ CSF::createSection($prefix, array(
     )
   )
 ));
+
 
 // all section heading Content Area 
 CSF::createSection($prefix, array(

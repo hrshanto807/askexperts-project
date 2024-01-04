@@ -5,13 +5,22 @@
                 <div class="footer-area grid grid-cols-4  gap-24 md:pt-10 mob:grid-cols-2 ps-20 tab:grid-cols-2">
                     <!-- single footer area start-->
                     <div class="single-footer-area">
-                        <img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt="">
+                        <img src="<?php $footer_logo = aepexpert_get_option('logo-footer');
+                                                            if (!empty($footer_logo)) {
+                                                                echo esc_url($footer_logo['url']);
+                                                            };
+                                                            ?>" alt="">
                         <div class="footer social link flex items-center gap-2 mt-8">
-                            <a href="#" class="text-white">Fb./</a>
-                            <a href="#" class="text-white">Ig./</a>
-                            <a href="#" class="text-white">Tw./</a>
-                            <a href="#" class="text-white">Be.</a>
+                        <?php $footer_social = aepexpert_get_option('footer-social-repeater');
+                    if (!empty($footer_social)) : foreach ($footer_social as $social) :; ?>
+                            <a class="text-white" href="<?php if (!empty($social)) {
+                                            echo esc_url($social['social-link-f']);
+                                        }; ?>"><?php if (!empty($social)) {
+                                                                            echo esc_html($social['social-name']);
+                                                                        }; ?></a>
 
+                    <?php endforeach;
+                    endif; ?>
                         </div>
                     </div>
                     <!-- single footer area end -->

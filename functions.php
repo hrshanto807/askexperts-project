@@ -37,6 +37,9 @@ function aepexpert_all_genarel()
     add_image_size('aep-team--single-thumb', 478, 504,true);
     add_image_size('aep-port-single-thumb', 367, 345,true);
     add_image_size('aep-portthumb', 1200, 453,true);
+
+    register_nav_menu('header_menu',__('Main Menu'));
+    
 };
 add_action('after_setup_theme', 'aepexpert_all_genarel');
 
