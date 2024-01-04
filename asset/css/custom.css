@@ -643,9 +643,7 @@ span {
 .aep-home-blog-area {
     padding-top: 178px;
     padding-bottom: 178px;
-    background: #F5F5F5;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    background: #F5F5F5;   
 }
 
 .single-blog-meta-area-name img {
@@ -849,14 +847,10 @@ span {
 
 }
 
-.about-us-aep-exprience {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.about-us-aep-exprience {   
+    padding-bottom: 150px;
     background-color: var(--aep-bc-color);
 }
-
 .video-area {
     width: 962px;
     height: 369px;
@@ -1021,9 +1015,7 @@ span {
 .aep-service-single-video-area {
     background: #181818;
     padding-top: 152px;
-    padding-bottom: 152px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-bottom: 152px;    
 }
 
 .aep-service-single-video-area {

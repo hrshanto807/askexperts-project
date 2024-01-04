@@ -57,7 +57,7 @@ get_header()
                             <a href="<?php the_permalink(); ?>">
                                 <h3 class="mt-5"><?php the_title(); ?></h3>
                             </a>
-                            <p><?php echo wp_trim_words(the_content(), 15, NULL) ?></p>
+                            <p><?php echo wp_trim_words(get_the_content(), 15, NULL) ?></p>
                             <div class="team-member-socail mt-6 flex gap-3 justify-center
                             mob:justify-start tab:justify-start">
                                 <?php $team_social = get_post_meta(get_the_ID(),'team-social_repeat_group',true);

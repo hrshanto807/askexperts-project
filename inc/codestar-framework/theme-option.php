@@ -97,6 +97,23 @@ CSF::createSection($prefix, array(
     ),
   )
 ));
+// About hero
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-hero-bg',
+  'title' => 'About Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'about-hero-bg',
+      'title' => 'About Hero Bg',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'about-hero-title',
+      'title' => 'About Hero Title',
+      'type'  => 'text',
+    )
+  )
+));
 // team hero
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
@@ -925,6 +942,11 @@ CSF::createSection($prefix, array(
       'id'    => 'histoy-name',
       'type'  => 'text',
       'title' => 'History Name'
+    ),
+    array(
+      'id'    => 'histoy-content',
+      'type'  => 'textarea',
+      'title' => 'History Content'
     ),
     array(
       'id'    => 'histoy-title',
