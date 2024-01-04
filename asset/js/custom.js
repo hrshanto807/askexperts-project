@@ -135,7 +135,7 @@
         $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian')
     });
 
-    // owl-carousel for service pages
+    // owl-carousel for home pages
     $('#single-testi').owlCarousel({
         loop: true,
         autoplay: true,

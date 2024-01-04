@@ -22,28 +22,48 @@ CSF::createOptions($prefix, array(
 //
 CSF::createSection($prefix, array(
   'id'    => 'aep-hero-bg',
-  'title' => 'All Hero BG Here',
+  'title' => 'All Hero Section Here',
   'icon'  => 'far fa-images',
 ));
 // home hero
 CSF::createSection($prefix, array(
   'parent'    => 'aep-hero-bg',
-  'title' => 'Home Page Hero BG',
+  'title' => 'Home Page Hero ',
   'fields' => array(
     array(
       'id' => 'home-hero-bg',
       'title' => 'Home Hero Bg',
       'type'  => 'media',
+    ),    
+    array(
+      'id' => 'home-hero-heading',
+      'title' => 'Home Hero title',
+      'type'  => 'text',
     ),
     array(
-      'id' => 'home-hero-name',
-      'title' => 'Home Hero Name',
-      'type'  => 'media',
+      'id' => 'home-hero-content',
+      'title' => 'Home Hero Content',
+      'type'  => 'text',
     ),
     array(
-      'id' => 'home-hero-title',
-      'title' => 'Home Hero Title',
-      'type'  => 'media',
+      'id' => 'home-hero-btn-1',
+      'title' => 'Home Hero btn 1',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-hero-btn-1-link',
+      'title' => 'Home Hero btn 1 LInk',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-hero-btn-2',
+      'title' => 'Home Hero btn 2',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-hero-btn-2-link',
+      'title' => 'Home Hero btn 2 link',
+      'type'  => 'text',
     )
   )
 ));
@@ -268,7 +288,313 @@ CSF::createSection($prefix, array(
   )
 ));
 
+// all home here themeoption
+CSF::createSection($prefix, array(
+  'id'    => 'aep-home',
+  'title' => 'Home Page Theme Option ',
+));
+// Home About
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page About ',
+  'fields' => array(
+    array(
+      'id' => 'home-about-bg',
+      'title' => 'Home About Bg',
+      'type'  => 'media',
+    ),    
+    array(
+      'id' => 'home-about-thumb',
+      'title' => 'Home About Thumb',
+      'type'  => 'media',
+    ),    
+    array(
+      'id' => 'home-about-name',
+      'title' => 'Home About Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-about-heading',
+      'title' => 'Home About Heading',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-about-title',
+      'title' => 'Home About Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-about-content',
+      'title' => 'Home ABout Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'home-about-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home About Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
 
+        array(
+          'id'    => 'about-icon',
+          'type'  => 'icon',
+          'title' => 'About Bottom icon'
+        ),
+        array(
+          'id'    => 'about-plus',
+          'type'  => 'text',
+          'title' => 'Plus Number'
+        ),
+        array(
+          'id'    => 'plus-title',
+          'type'  => 'text',
+          'title' => 'Plus COntent'
+        ),
+
+      ),
+    ),
+    array(
+      'id' => 'home-about-market-ex',
+      'title' => 'Home About Market Expricens PLus',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-about-market-ex-title',
+      'title' => 'Home About Market Expricens Title',
+      'type'  => 'text',
+    ),
+    
+    
+)));
+// Home Process
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Proccess ',
+  'fields' => array( 
+   
+    array(
+      'id' => 'home-Proccess-name',
+      'title' => 'Home Proccess Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-Proccess-heading',
+      'title' => 'Home Proccess Heading',
+      'type'  => 'text',
+    ),   
+    array(
+      'id' => 'home-Proccess-content',
+      'title' => 'Home Proccess Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'home-Proccess-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home Proccess Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
+        
+        array(
+          'id'    => 'Proccess-num',
+          'type'  => 'text',
+          'title' => 'Proccess Number'
+        ),
+        array(
+          'id'    => 'Proccess-title',
+          'type'  => 'text',
+          'title' => 'Proccess Title'
+        ),
+        array(
+          'id'    => 'Proccess-content',
+          'type'  => 'text',
+          'title' => 'Proccess COntent'
+        ),
+
+      ),
+    ),   
+)));
+// Home Groth
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Growing ',
+  'fields' => array( 
+   
+    array(
+      'id' => 'home-Growing-name',
+      'title' => 'Home Growing Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-Growing-heading',
+      'title' => 'Home Growing Heading',
+      'type'  => 'text',
+    ),   
+    array(
+      'id' => 'home-Growing-content',
+      'title' => 'Home Growing Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'home-Growing-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home Growing Repeater',
+      'button_title' => 'ADD ANOTHER Service',
+      'fields' => array(
+        
+        array(
+          'id'    => 'Growing-icon',
+          'type'  => 'icon',
+          'title' => 'Growings Icon'
+        ),
+        array(
+          'id'    => 'Growing-title',
+          'type'  => 'text',
+          'title' => 'Growing Title'
+        ),
+        array(
+          'id'    => 'Growing-content',
+          'type'  => 'text',
+          'title' => 'Growing COntent'
+        ),
+
+      ),
+    ),   
+)));
+// Home Gellary
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Gellary ',
+  'fields' => array(  
+   
+    array(
+      'id' => 'home-gellary-name',
+      'title' => 'Gellary Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'home-gellary-heading',
+      'title' => 'Gellary Heading',
+      'type'  => 'text',
+    ),    
+    array(
+      'id' => 'home-gellary-button',
+      'title' => 'GEllary Button NAme',
+      'type'  => 'text',
+    ),    
+    array(
+      'id' => 'home-gellary-button-link',
+      'title' => 'Gellary Button Link',
+      'type'  => 'text',
+    ), 
+   
+)));
+// Home Skill
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Skill ',
+  'fields' => array(  
+   
+    array(
+      'id'     => 'home-skill-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home About Skill',
+      'button_title' => 'ADD ANOTHER Skill',
+      'fields' => array(
+
+        array(
+          'id'    => 'home-skill-plus',
+          'type'  => 'text',
+          'title' => 'Home Skill NUmber'
+        ),       
+        array(
+          'id'    => 'home-skill-title',
+          'type'  => 'text',
+          'title' => 'Home Skill Title'
+        ),       
+      ),
+    ),
+)));
+// Home Testimonial
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Feedback ',
+  'fields' => array( 
+    array(
+      'id'    => 'home-Feedback-title',
+      'type'  => 'text',
+      'title' => 'Home Feedback Title'
+    ), 
+    array(
+      'id'     => 'home-Feedback-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Home About Feedback',
+      'button_title' => 'ADD ANOTHER Feedback',
+      'fields' => array(        
+        array(
+          'id'    => 'home-Feedback-Content',
+          'type'  => 'textarea',
+          'title' => 'Home Feedback Content'
+        ),       
+        array(
+          'id'    => 'home-Feedback-img',
+          'type'  => 'media',
+          'title' => 'Home Feedback Image'
+        ),       
+        array(
+          'id'    => 'home-Feedback-name',
+          'type'  => 'text',
+          'title' => 'Home Feedback name'
+        ),       
+        array(
+          'id'    => 'home-Feedback-pro',
+          'type'  => 'text',
+          'title' => 'Home Feedback Profession'
+        ),       
+      ),
+    ),
+)));
+// Home Book Now
+CSF::createSection($prefix, array(
+  'parent'    => 'aep-home',
+  'title' => 'Home Page Book Now ',
+  'fields' => array(     
+   
+    array(
+      'id'    => 'home-book-name',
+      'type'  => 'text',
+      'title' => 'Book Now Name'
+    ), 
+   
+    array(
+      'id'    => 'home-book-title',
+      'type'  => 'text',
+      'title' => 'Book Now Title'
+    ), 
+   
+    array(
+      'id'    => 'home-book-content',
+      'type'  => 'textarea',
+      'title' => 'Book Now Content'
+    ),   
+    
+    array(
+      'id'    => 'home-book-num',
+      'type'  => 'text',
+      'title' => 'Book Now Number'
+    ), 
+    array(
+      'id'    => 'home-book-img-1',
+      'type'  => 'media',
+      'title' => 'Book Now First Image'
+    ), 
+
+    array(
+      'id'    => 'home-book-img-2',
+      'type'  => 'media',
+      'title' => 'Book Now Seconed Image'
+    ),   
+   
+)));
 // ready to talk area area
 CSF::createSection($prefix, array(
   'id'    => 'aep-section-ready-talk',

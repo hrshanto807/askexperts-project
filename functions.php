@@ -49,6 +49,14 @@ function aepexpert_allow_tags()
     );
     return $allow_tags;
 };
+//  allow html tag
+function aepexpert_allow_span()
+{
+    $allow_tags = array(
+        'span'  => array(),
+    );
+    return $allow_tags;
+};
 
 // A Custom function for get an option
 if (!function_exists('aepexpert_get_option')) {
