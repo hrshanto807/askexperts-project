@@ -71,7 +71,11 @@
                     <!-- header  right area start-->
                     <div class="header_phone_call flex bg-white rounded-3xl items-center p-4 justify-center">
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:">+ (888) 452 1505</a>
+                        <a href="tel:<?php if (!empty(aepexpert_get_option('home-book-num'))) {
+                        echo esc_html(aepexpert_get_option('home-book-num'));
+                    };?>"><?php if (!empty(aepexpert_get_option('home-book-num'))) {
+                        echo esc_html(aepexpert_get_option('home-book-num'));
+                    };?></a>
                     </div>
                     <!-- header  right area end-->
                 </div>

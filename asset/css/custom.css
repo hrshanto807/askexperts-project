@@ -754,24 +754,6 @@ span {
     font-size: 60px;
     color: var(--aep-primary-color);
 }
-
-.btn-footer {
-    display: flex;
-    padding: 16px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 42px;
-    background: #FFF;
-    color: #181818;
-    font-family: Lato;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-    margin-top: 20px;
-    /* 28.8px */
-}
-
 .copyright-area a {
     color: var(--aep-bc-color);
 }

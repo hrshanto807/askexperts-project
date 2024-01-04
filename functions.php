@@ -83,6 +83,6 @@ require_once AEPEXPERT_FILE_INC . '/inc/cmb2-aiconselect/iconselect.php';
 require_once AEPEXPERT_FILE_INC . '/inc/codestar-framework/theme-option.php';
 require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
 require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/metabox-list.php';
-//require_once AEPEXPERT_FILE_INC . '/inc/CMB2-develop/example-functions.php';
 require_once AEPEXPERT_FILE_INC . '/inc/shortcode.php';
 require_once AEPEXPERT_FILE_INC . '/inc/custom-post.php';
+require_once AEPEXPERT_FILE_INC . '/inc/widget.php';
